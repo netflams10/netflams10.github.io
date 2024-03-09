@@ -16,36 +16,117 @@
         <span class="material-icons">home</span>
         <span class="text">Home</span>
       </router-link>
-      <router-link class="button" to="/about">
+      <!-- <router-link class="button" to="/stack">
         <span class="material-icons">home</span>
-        <span class="text">About</span>
-      </router-link>
+        <span class="text">Stack</span>
+      </router-link> -->
+
       <router-link class="button" to="/projects">
-        <span class="material-icons">home</span>
-        <span class="text">Chase</span>
+        <span class="material-icons">
+          <Icon
+            icon="fa6-solid:computer"
+            class="material-icons"
+            color="#ffb515"
+          />
+        </span>
+        <span class="text">Projects</span>
       </router-link>
-      <router-link class="button" to="/experience">
-        <span class="material-icons">home</span>
-        <span class="text">Kate</span>
+
+      <router-link class="button" to="/articles">
+        <span class="material-icons">
+          <Icon
+            icon="material-symbols:article-shortcut"
+            class="material-icons"
+            color="#FF0000"
+          />
+        </span>
+        <span class="text">Articles</span>
       </router-link>
-      <router-link class="button" to="/skills">
-        <span class="material-icons">home</span>
-        <span class="text">Base</span>
+
+      <router-link class="button" to="/stacks">
+        <span class="material-icons">
+          <Icon
+            icon="material-symbols:social-leaderboard-rounded"
+            class="material-icons"
+            color="#FFD700"
+          />
+        </span>
+        <span class="text">Stacks</span>
+      </router-link>
+
+      <router-link class="button" to="/open-source">
+        <span class="material-icons">
+          <Icon
+            icon="vscode-icons:file-type-source"
+            class="material-icons"
+            color="	#57e32c"
+          />
+        </span>
+        <span class="text">Open Source</span>
+      </router-link>
+
+      <router-link class="button" to="/testimonials">
+        <span class="material-icons">
+          <Icon
+            icon="material-symbols:award-star-outline"
+            class="material-icons"
+            color="	#57e32c"
+          />
+        </span>
+        <span class="text">Testimonials</span>
       </router-link>
     </div>
 
     <div class="flex"></div>
     <div class="menu">
-      <router-link class="button" to="/settings">
-        <span class="material-icons">settings</span>
-        <span class="text">Setting</span>
-      </router-link>
+      <a class="button" href="https://twitter.com/segunflams" target="_blank">
+        <span>
+          <Icon
+            icon="arcticons:twitter-alt-2"
+            class="material-icons"
+            color="#1DA1F2"
+          />
+        </span>
+        <span class="text">Twitter</span>
+      </a>
+      <a
+        class="button"
+        href="https://www.linkedin.com/in/opeyemi-amusan-b0a2a8152/"
+        target="_blank"
+      >
+        <span>
+          <Icon
+            icon="ion:logo-linkedin"
+            class="material-icons"
+            color="#0077b5"
+          />
+        </span>
+        <span class="text">Linked In</span>
+      </a>
+      <a class="button" href="https://github.com/netflams10" target="_blank">
+        <span>
+          <Icon
+            icon="ph:github-logo-fill"
+            class="material-icons"
+            color="#24292e"
+          />
+        </span>
+        <span class="text">Github</span>
+      </a>
+      <a class="button" href="mailto:segope44@gmail.com" target="__blank">
+        <!-- <span class="material-icons">settings</span> -->
+        <span>
+          <Icon icon="mdi:gmail" class="material-icons" color="#c71610" />
+        </span>
+        <span class="text">Gmail</span>
+      </a>
     </div>
   </aside>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import { Icon } from "@iconify/vue";
 
 const is_expanded = ref(false);
 

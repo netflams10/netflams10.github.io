@@ -6,7 +6,6 @@ import router from "./router";
 import store from "./store";
 
 // icons
-// import feather from "vue-icon";
 
 const app = createApp(App);
 
