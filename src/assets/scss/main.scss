@@ -20,10 +20,36 @@
 }
 
 body {
-  background: var(--light);
+  background: var(--dark);
+  height: 100vh;
   cursor: none;
-  // height: 100vh;
 }
+
+
+/** Playful Cursor **/
+// .cursor-dot {
+//   width:5px;
+//   height: 5px;
+//   background-color: var(--light);
+// }
+
+// .cursor-outline {
+//   width: 30px;
+//   height: 30px;
+//   border: 2px solid hsla(0, 0%, 100%, 0.5)
+// }
+
+// .cursor-outline, .cursor-dot {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   transform: translate(-50%, -50%);
+//   border-radius: 50%;
+//   z-index: 100000000000000;
+//   pointer-events: none;
+// }
+
+/** End Playful Cursor **/
 
 button {
   cursor: pointer;
@@ -46,6 +72,8 @@ button {
   }
 }
 
+
+/** Cursor **/
 .cursor {
   width: 20px;
   height: 20px;
@@ -104,3 +132,4 @@ button {
     opacity: 0;
   }
 }
+/** End Cursor **/

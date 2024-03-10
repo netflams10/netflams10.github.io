@@ -1,7 +1,7 @@
 <template>
   <aside :class="`${is_expanded && 'is-expanded'}`">
     <div class="logo">
-      <img src="../../assets/logo.svg" alt="Linux Pengiuns" />
+      <img src="../../assets/images/linux.svg" alt="Linux Pengiuns" />
     </div>
 
     <div class="menu-toggle-wrap">

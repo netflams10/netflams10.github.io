@@ -12,11 +12,17 @@
     <title>Opeyemi [Isaiah]</title>
   </head>
   <body>
+    <!-- <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div> -->
     <div class="cursor"></div>
+    <div class="cursor-outline" data-cursor-outline></div>
 
     <div id="app"></div>
+    
+    <script type="module" src="/src/main.js"></script>
     <script>
       const cursor = document.querySelector(".cursor");
+      const cursor_outline = document.querySelector(".cursor-outline");
 
       document.addEventListener("mousemove", (e) => {
         cursor.setAttribute(
@@ -32,9 +38,6 @@
           cursor.classList.remove("expands");
         }, 500);
       });
-
-      
     </script>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
