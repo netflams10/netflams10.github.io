@@ -12,32 +12,28 @@
     <title>Opeyemi [Isaiah]</title>
   </head>
   <body>
-    <!-- <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div> -->
+    
     <div class="cursor"></div>
-    <div class="cursor-outline" data-cursor-outline></div>
 
     <div id="app"></div>
     
     <script type="module" src="/src/main.js"></script>
+   
     <script>
       const cursor = document.querySelector(".cursor");
-      const cursor_outline = document.querySelector(".cursor-outline");
 
-      document.addEventListener("mousemove", (e) => {
-        cursor.setAttribute(
-          "style",
-          "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-        );
-      });
+      window.addEventListener('mousemove', (e) => {
+        cursor.style.top = `${e.pageY}px`
+        cursor.style.left = `${e.pageX}px`
+      })
 
-      document.addEventListener("click", (e) => {
+      window.addEventListener('click', () => {
         cursor.classList.add("expands");
-
         setTimeout(() => {
           cursor.classList.remove("expands");
         }, 500);
-      });
+      })
+     
     </script>
   </body>
 </html>

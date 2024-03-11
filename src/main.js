@@ -11,8 +11,6 @@ const app = createApp(App);
 
 app.use(router);
 
-// app.use(feather, "v-icon");
-
 app.use(store);
 
 app.mount("#app");

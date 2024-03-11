@@ -1,0 +1,59 @@
+{
+    "can-do": ["website", "webapps", "mobile apps", "things"],
+    "backend-jd": [
+        "Develop, test, and maintain robust backend systems and APIs to support frontend applications.",
+        "Collaborate with frontend developers to integrate user-facing elements with server-side logic.",
+        "Optimize application performance and scalability by implementing efficient data storage and retrieval methods.",
+        "Write clean, maintainable, and well-documented code following best practices and coding standards.",
+        "Troubleshoot and debug issues reported by users or QA team members to ensure smooth operation of applications.",
+        "Stay up-to-date with emerging technologies and industry trends to continuously improve backend development processes."
+    ],
+    "frontend-js": [
+        "Develop, test, and maintain frontend application logic to ensure functionality and performance.",
+        "Collaborate with designers and backend developers to implement user interfaces and integrate frontend logic with backend systems.",
+        "Write clean, efficient, and well-structured code using frontend technologies such as HTML, CSS, and JavaScript.",
+        "Implement frontend logic and algorithms to support dynamic user interactions and data manipulation.",
+        "Optimize application performance and responsiveness by identifying and resolving frontend bottlenecks.",
+        "Stay informed about industry trends and best practices in frontend development to continuously improve coding standards and practices."
+    ],
+    "devops-js": [
+        "Assist in the setup, configuration, and maintenance of Docker containers and Kubernetes clusters.",
+        "Support the development and deployment of microservices-based applications using containerization technologies.",
+        "Collaborate with the development team to streamline the CI/CD pipeline and automate deployment processes.",
+        "Monitor and troubleshoot containerized applications to ensure availability, performance, and scalability.",
+        "Participate in testing and validation of infrastructure changes and updates.",
+        "Document procedures, configurations, and best practices for Docker and Kubernetes environments."
+    ],
+    "projects": [
+        {"id": 7, "name": "25th & Staffing", "url": "https://www.25thandstaffing.com/", "image": "/assets/projects/25thandStaffing.png"},
+        {"id": 6, "name": "Corporate Setup", "url": "https://corporate-setup.app/", "image": "/assets/projects/corporate-data.png"},
+        {"id": 1, "name": "Jamborow", "url": "https://jamborow.co.uk/", "image": "/assets/projects/jamborow.png"},
+        {"id": 2, "name": "Cubevest", "url": "https://cubevest.com", "image": "/assets/projects/cubevest.png"},
+        {"id": 3, "name": "I Data", "url": "https://idata.softinventsolutions.com/", "image": "/assets/projects/idata.png"},
+        {"id": 4, "name": "Zero", "url": "https://e-zero.surge.sh/#/auth/login", "image": "/assets/projects/zero.png"},
+        {"id": 5, "name": "Cast", "url": "https://cast.i.ng", "image": "/assets/projects/cast.png"}
+    ],
+    "stacks": [
+        {"id": 1, "name": "CSS", "image": "/assets/languages/css3.png"},
+        {"id": 2, "name": "Docker", "image": "/assets/languages/docker.png"},
+        {"id": 3, "name": "HTML", "image": "/assets/languages/html.png"},
+        {"id": 4, "name": "JavaScript", "image": "/assets/languages/js.png"},
+        {"id": 5, "name": "MYSQL", "image": "/assets/languages/mysql.png"},
+        {"id": 6, "name": "POSTGRES", "image": "/assets/languages/postgres.png"},
+        {"id": 7, "name": "Nodejs", "image": "/assets/languages/nodejs.png"},
+        {"id": 8, "name": "PHP", "image": "/assets/languages/php.png"},
+        {"id": 9, "name": "python", "image": "/assets/languages/python.png"},
+        {"id": 10, "name": "React Native", "image": "/assets/languages/react-native.png"},
+        {"id": 11, "name": "TypeScript", "image": "/assets/languages/ts.png"},
+        {"id": 12, "name": "Vue", "image": "/assets/languages/vue.png"}
+    ],
+    "testimonials": [
+        {"id": 1, "name": "JobberMan SoftSkills", "url": "/asset/certificates/jobberman.pdf"},
+        {"id": 2, "name": "Business Foundation", "url": "/asset/certificates/business_foundation.pdf"},
+        {"id": 3, "name": "Team Work and Building", "url": "/asset/certificates/team_work_building.pdf"}
+    ],
+    "badges": [
+        {"id": 1, "course": "CyberSecurity Intro", "name": "IBM Digital - Nation", "image": "/assets/badges/cyber-security.png", "url": "/asset/certificates/jobberman.pdf"},
+        {"id": 1, "course": "Getting Started with Storage", "name": "AWS Educate", "image": "/assets/badges/aws-starting-storage.png", "url": "/asset/certificates/jobberman.pdf"}
+    ]
+}
