@@ -28,7 +28,6 @@ const roles = {
     async get_roles({ commit }) {
       try {
         const response = await axiosInstance.get("");
-        console.log(response.data);
 
         commit("set_roles", response.data?.roles);
       } catch (error) {}
@@ -36,25 +35,25 @@ const roles = {
     },
     async get_frontend_jd({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/frontend-jd");
+        const response = await axiosInstance.get("");
 
-        commit("set_frontend_jd", response.data);
+        commit("set_frontend_jd", response.data?.["frontend-jd"]);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },
     async get_backend_jd({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/backend-jd");
+        const response = await axiosInstance.get("");
 
-        commit("set_backend_jd", response.data);
+        commit("set_backend_jd", response.data?.["backend-jd"]);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },
     async get_devops_jd({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/devops-jd");
+        const response = await axiosInstance.get("");
 
-        commit("set_devops_jd", response.data);
+        commit("set_devops_jd", response.data?.["devops-jd"]);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },
