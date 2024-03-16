@@ -1,24 +1,26 @@
 <template>
-  <div class="about">
-    <h1>Badges</h1>
-    <div v-for="badge in badges" :key="badge.id">
-      {{ badge.name }} {{ badge.course }} {{ badge.image }} {{ badge.url }}
+  <main>
+    <div class="">
+      <h1>Badges</h1>
+      <div v-for="badge in badges" :key="badge.id">
+        {{ badge.name }} {{ badge.course }} {{ badge.image }} {{ badge.url }}
+      </div>
     </div>
-  </div>
-  <div class="about">
-    <h1>Testimonials</h1>
-    <div v-for="testimonial in testimonials" :key="testimonial.id">
-      {{ testimonial.name }}
-      {{ testimonial.url }}
+    <div class="">
+      <h1>Testimonials</h1>
+      <div v-for="testimonial in testimonials" :key="testimonial.id">
+        {{ testimonial.name }}
+        {{ testimonial.url }}
+      </div>
     </div>
-  </div>
-  <div>
-    <h1>Education</h1>
-    <div v-for="education in educations" :key="education.id">
-      {{ education.name }} {{ education.graduation_year }}
-      {{ education.start_year }} {{ education.certificate }}
+    <div>
+      <h1>Education</h1>
+      <div v-for="education in educations" :key="education.id">
+        {{ education.name }} {{ education.graduation_year }}
+        {{ education.start_year }} {{ education.certificate }}
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

@@ -1,7 +1,9 @@
 <template>
-  <div class="about">
-    <h1>This is an Open Article</h1>
-  </div>
+  <main>
+    <div class="">
+      <h1>This is an Open Article</h1>
+    </div>
+  </main>
 </template>
 
 <style>

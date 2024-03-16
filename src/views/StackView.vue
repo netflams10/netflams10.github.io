@@ -1,10 +1,12 @@
 <template>
-  <div class="about">
-    <h1>Stacks</h1>
-    <div v-for="stack in stacks" :key="stack.id">
-      <div>{{ stack.name }} {{ stack.image }}</div>
+  <main>
+    <div class="">
+      <h1>Stacks</h1>
+      <div v-for="stack in stacks" :key="stack.id">
+        <div>{{ stack.name }} {{ stack.image }}</div>
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

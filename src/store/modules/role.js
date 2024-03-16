@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import axiosInstance from "../../utility/axiosInstance";
 const roles = {
   state() {
     return {
@@ -27,7 +27,7 @@ const roles = {
   actions: {
     async get_roles({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/roles");
+        const response = await axiosInstance.get("/get-roles");
 
         commit("set_roles", response.data);
       } catch (error) {}

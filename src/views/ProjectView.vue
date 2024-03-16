@@ -1,15 +1,17 @@
 <template>
-  <div class="about">
-    <h1>Project</h1>
-  </div>
-  <div>
-    <div v-for="project in projects" :key="project.id">
-      <div>
-        <h3>{{ project.name }}</h3>
-        <div>{{ project.url }}</div>
+  <main>
+    <div class="">
+      <h1>Project</h1>
+    </div>
+    <div>
+      <div v-for="project in projects" :key="project.id">
+        <div>
+          <h3>{{ project.name }}</h3>
+          <div>{{ project.url }}</div>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

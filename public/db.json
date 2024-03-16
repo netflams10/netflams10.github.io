@@ -1,5 +1,5 @@
 {
-    "get-roles": [
+    "roles": [
         {"_id": "5a6900fff467be65019a9001", "name": "website"}, 
         {"_id": "5a6900fff467be65019a9004", "name": "webapps"}, 
         {"_id": "5a6900fff467be65019a9003", "name": "mobile apps"}, 

@@ -1,14 +1,19 @@
 <template>
-  <div class="about">
-    <h1>Badges</h1>
-    <div v-for="work_experience in work_experiences" :key="work_experience.id">
-      {{ work_experience.name }} {{ work_experience.date }}
-      {{ work_experience.position }}
-      <ul>
-        <li v-for="jd in work_experience.jd" :key="jd.id">{{ jd.name }}</li>
-      </ul>
+  <main>
+    <div class="">
+      <h1>Badges</h1>
+      <div
+        v-for="work_experience in work_experiences"
+        :key="work_experience.id"
+      >
+        {{ work_experience.name }} {{ work_experience.date }}
+        {{ work_experience.position }}
+        <ul>
+          <li v-for="jd in work_experience.jd" :key="jd.id">{{ jd.name }}</li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
