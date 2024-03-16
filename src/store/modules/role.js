@@ -27,9 +27,10 @@ const roles = {
   actions: {
     async get_roles({ commit }) {
       try {
-        const response = await axiosInstance.get("/get-roles");
+        const response = await axiosInstance.get("");
+        console.log(response.data);
 
-        commit("set_roles", response.data);
+        commit("set_roles", response.data?.roles);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },

@@ -5,7 +5,7 @@ const baseURL = import.meta.env.BASE_URL;
 // console.log(import.meta.env.DEV ? "" : "");
 
 const axiosInstance = axios.create({
-  baseURL,
+  baseURL: "db.json",
   timeout: 1000,
   headers: { Accept: "application/json" },
 });
