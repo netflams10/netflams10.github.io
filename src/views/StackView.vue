@@ -1,15 +1,23 @@
 <template>
   <div class="about">
-    <h1>This is an Open Stack</h1>
+    <h1>Stacks</h1>
+    <div v-for="stack in stacks" :key="stack.id">
+      <div>{{ stack.name }} {{ stack.image }}</div>
+    </div>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<script>
+import { mapState } from "vuex";
+
+export default {
+  mounted() {
+    this.$store.dispatch("get_stacks");
+  },
+  computed: mapState({
+    stacks: ({ stack }) => stack.stacks,
+  }),
+};
+</script>
+
+<style></style>

@@ -30,9 +30,14 @@ const router = createRouter({
       component: () => import("../views/OpenSourceView.vue"),
     },
     {
-      path: "/testimonials",
-      name: "testimonials",
-      component: () => import("../views/TestimonialView.vue"),
+      path: "/education",
+      name: "education",
+      component: () => import("../views/EducationView.vue"),
+    },
+    {
+      path: "/work-experience",
+      name: "work-experience",
+      component: () => import("../views/WorkExperienceView.vue"),
     },
   ],
 });

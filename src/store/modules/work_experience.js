@@ -1,0 +1,29 @@
+import axios from "axios";
+
+const work_experience = {
+  state() {
+    return {
+      work_experiences: [],
+    };
+  },
+  mutations: {
+    set_work_experiences(state, payload) {
+      state.work_experiences = payload;
+    },
+  },
+  getters: {},
+  actions: {
+    async get_work_experiences({ commit }) {
+      try {
+        const response = await axios.get(
+          "http://localhost:3000/work-experiences"
+        );
+
+        commit("set_work_experiences", response.data);
+      } catch (error) {}
+      // console.log("Action got here g", context, payload);
+    },
+  },
+};
+
+export default work_experience;

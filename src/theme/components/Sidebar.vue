@@ -65,10 +65,21 @@
         <span class="text">Open Source</span>
       </router-link>
 
-      <router-link class="button" to="/testimonials">
+      <router-link class="button" to="/education">
         <span class="material-icons">
           <Icon
             icon="material-symbols:award-star-outline"
+            class="material-icons"
+            color="	#57e32c"
+          />
+        </span>
+        <span class="text">Testimonials</span>
+      </router-link>
+
+      <router-link class="button" to="/work-experience">
+        <span class="material-icons">
+          <Icon
+            icon="material-symbols-light:credit-card-gear-sharp"
             class="material-icons"
             color="	#57e32c"
           />
