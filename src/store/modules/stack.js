@@ -15,9 +15,9 @@ const stack = {
   actions: {
     async get_stacks({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/stacks");
+        const response = await axios.get("");
 
-        commit("set_stacks", response.data);
+        commit("set_stacks", response.data?.stacks);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },

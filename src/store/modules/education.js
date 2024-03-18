@@ -1,4 +1,5 @@
 import axios from "axios";
+import axiosInstance from "@/utility/axiosInstance";
 
 const education = {
   state() {
@@ -23,25 +24,25 @@ const education = {
   actions: {
     async get_badges({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/badges");
+        const response = await axiosInstance.get("");
 
-        commit("set_badges", response.data);
+        commit("set_badges", response.data?.badges);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },
     async get_testimonials({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/testimonials");
+        const response = await axiosInstance.get("");
 
-        commit("set_testimonials", response.data);
+        commit("set_testimonials", response.data?.testimonials);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },
     async get_educations({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/educations");
+        const response = await axiosInstance.get("");
 
-        commit("set_educations", response.data);
+        commit("set_educations", response.data?.educations);
       } catch (error) {
         console.log(err);
       }

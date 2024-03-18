@@ -15,9 +15,9 @@ const project = {
   actions: {
     async get_projects({ commit }) {
       try {
-        const response = await axios.get("http://localhost:3000/projects");
+        const response = await axios.get("");
 
-        commit("set_projects", response.data);
+        commit("set_projects", response.data?.projects);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },

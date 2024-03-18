@@ -15,11 +15,9 @@ const work_experience = {
   actions: {
     async get_work_experiences({ commit }) {
       try {
-        const response = await axios.get(
-          "http://localhost:3000/work-experiences"
-        );
+        const response = await axios.get("");
 
-        commit("set_work_experiences", response.data);
+        commit("set_work_experiences", response.data?.["work-experiences"]);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },
