@@ -22,6 +22,7 @@
 body {
   margin:0;
   padding: 0;
+  box-sizing: border-box;
   background: var(--light);
   height: 100vh;
   cursor: none;
@@ -30,22 +31,28 @@ body {
 /** End Playful Cursor **/
 
 button {
-  // cursor: pointer;
   appearance: none;
   border: none;
   outline: none;
   background: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .app {
   display: flex;
+  // background-color: yellow;
 
   main {
-    flex: 1 1 0;
+    // flex: 1 1 0;
     padding: 2rem;
     overflow: hidden;
     background-color: #808080;
     height: 100vh;
+    // width: 100%;
 
     @media screens and (max-width: 768px) {
       padding-left: 6rem;

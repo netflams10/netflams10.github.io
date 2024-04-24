@@ -16,10 +16,6 @@
         <span class="material-icons">home</span>
         <span class="text">Home</span>
       </router-link>
-      <!-- <router-link class="button" to="/stack">
-        <span class="material-icons">home</span>
-        <span class="text">Stack</span>
-      </router-link> -->
 
       <router-link class="button" to="/projects">
         <span class="material-icons">
@@ -122,7 +118,7 @@
             color="#24292e"
           />
         </span>
-        <span class="text">Github</span>
+        <span class="social-text">Github</span>
       </a>
       <a class="button" href="mailto:segope44@gmail.com" target="__blank">
         <!-- <span class="material-icons">settings</span> -->
@@ -200,7 +196,8 @@ aside {
   }
 
   h3,
-  .button .text {
+  .button .text,
+  .button .social-text {
     opacity: 0;
     transition: 0.3s ease-out;
   }
@@ -228,7 +225,8 @@ aside {
         transition: 0.2s ease-out;
       }
 
-      .text {
+      .text,
+      .social-text {
         color: var(--light);
         transition: 0.2s ease-out;
       }
@@ -262,7 +260,8 @@ aside {
 
     h3,
     .button,
-    .text {
+    .text,
+    .social-text {
       opacity: 1;
     }
 

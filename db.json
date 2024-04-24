@@ -1,33 +1,50 @@
 {
-    "roles": [
+    "specializations": [
         {"_id": "5a6900fff467be65019a9001", "name": "website"}, 
         {"_id": "5a6900fff467be65019a9004", "name": "webapps"}, 
         {"_id": "5a6900fff467be65019a9003", "name": "mobile apps"}, 
         {"_id": "5a6900fff467be65019a9002", "name": "things"}
     ],
-    "backend-jd": [
-        {"_id": "5a6900fff467be65019a8001", "name": "Develop, test, and maintain robust backend systems and APIs to support frontend applications."},
-        {"_id": "5a6900fff467be65019a8002", "name": "Collaborate with frontend developers to integrate user-facing elements with server-side logic."},
-        {"_id": "5a6900fff467be65019a8003", "name": "Optimize application performance and scalability by implementing efficient data storage and retrieval methods."},
-        {"_id": "5a6900fff467be65019a8004", "name": "Write clean, maintainable, and well-documented code following best practices and coding standards."},
-        {"_id": "5a6900fff467be65019a8005", "name": "Troubleshoot and debug issues reported by users or QA team members to ensure smooth operation of applications."},
-        {"_id": "5a6900fff467be65019a8006", "name": "Stay up-to-date with emerging technologies and industry trends to continuously improve backend development processes."}
-    ],
-    "frontend-jd": [
-        {"_id": "5a6900fff467be65019b8001", "name": "Develop, test, and maintain frontend application logic to ensure functionality and performance."},
-        {"_id": "5a6900fff467be65019b8002", "name": "Collaborate with designers and backend developers to implement user interfaces and integrate frontend logic with backend systems."},
-        {"_id": "5a6900fff467be65019b8003", "name":  "Write clean, efficient, and well-structured code using frontend technologies such as HTML, CSS, and JavaScript."},
-        {"_id": "5a6900fff467be65019b8004", "name": "Implement frontend logic and algorithms to support dynamic user interactions and data manipulation."},
-        {"_id": "5a6900fff467be65019b8005", "name": "Optimize application performance and responsiveness by identifying and resolving frontend bottlenecks."},
-        {"_id": "5a6900fff467be65019b8006", "name": "Stay informed about industry trends and best practices in frontend development to continuously improve coding standards and practices."}
-    ],
-    "devops-jd": [
-        {"_id": "5a6900fff467be65056b8027", "name": "Assist in the setup, configuration, and maintenance of Docker containers and Kubernetes clusters."},
-        {"_id": "5a6900fff467be65056b8028", "name": "Support the development and deployment of microservices-based applications using containerization technologies."},
-        {"_id": "5a6900fff467be65056b8029", "name": "Collaborate with the development team to streamline the CI/CD pipeline and automate deployment processes."},
-        {"_id": "5a6900fff467be65056b8021", "name": "Monitor and troubleshoot containerized applications to ensure availability, performance, and scalability."},
-        {"_id": "5a6900fff467be65056b8022", "name": "Participate in testing and validation of infrastructure changes and updates."},
-        {"_id": "5a6900fff467be65056b8024", "name": "Document procedures, configurations, and best practices for Docker and Kubernetes environments."}
+    "operations": [
+        {
+            "_id": 1, 
+            "name": "backend", 
+            "image": "/public/assets/images/modals/backend.png",
+            "roles": [
+                {"_id": "5a6900fff467be65019a8001", "name": "Develop, test, and maintain robust backend systems and APIs to support frontend applications."},
+                {"_id": "5a6900fff467be65019a8002", "name": "Collaborate with frontend developers to integrate user-facing elements with server-side logic."},
+                {"_id": "5a6900fff467be65019a8003", "name": "Optimize application performance and scalability by implementing efficient data storage and retrieval methods."},
+                {"_id": "5a6900fff467be65019a8004", "name": "Write clean, maintainable, and well-documented code following best practices and coding standards."},
+                {"_id": "5a6900fff467be65019a8005", "name": "Troubleshoot and debug issues reported by users or QA team members to ensure smooth operation of applications."},
+                {"_id": "5a6900fff467be65019a8006", "name": "Stay up-to-date with emerging technologies and industry trends to continuously improve backend development processes."}
+            ]
+        },
+        {
+            "_id": 2, 
+            "name": "frontend",
+            "image": "/public/assets/images/modals/frontend.png",
+            "roles": [
+                {"_id": "5a6900fff467be65019b8001", "name": "Develop, test, and maintain frontend application logic to ensure functionality and performance."},
+                {"_id": "5a6900fff467be65019b8002", "name": "Collaborate with designers and backend developers to implement user interfaces and integrate frontend logic with backend systems."},
+                {"_id": "5a6900fff467be65019b8003", "name": "Write clean, efficient, and well-structured code using frontend technologies such as HTML, CSS, and JavaScript."},
+                {"_id": "5a6900fff467be65019b8004", "name": "Implement frontend logic and algorithms to support dynamic user interactions and data manipulation."},
+                {"_id": "5a6900fff467be65019b8005", "name": "Optimize application performance and responsiveness by identifying and resolving frontend bottlenecks."},
+                {"_id": "5a6900fff467be65019b8006", "name": "Stay informed about industry trends and best practices in frontend development to continuously improve coding standards and practices."}
+            ]
+        },
+        {
+            "_id": 3, 
+            "name": "dev ops", 
+            "image": "/public/assets/images/modals/devops.png",
+            "roles": [
+                {"_id": "5a6900fff467be65056b8027", "name": "Assist in the setup, configuration, and maintenance of Docker containers and Kubernetes clusters."},
+                {"_id": "5a6900fff467be65056b8028", "name": "Support the development and deployment of microservices-based applications using containerization technologies."},
+                {"_id": "5a6900fff467be65056b8029", "name": "Collaborate with the development team to streamline the CI/CD pipeline and automate deployment processes."},
+                {"_id": "5a6900fff467be65056b8021", "name": "Monitor and troubleshoot containerized applications to ensure availability, performance, and scalability."},
+                {"_id": "5a6900fff467be65056b8022", "name": "Participate in testing and validation of infrastructure changes and updates."},
+                {"_id": "5a6900fff467be65056b8024", "name": "Document procedures, configurations, and best practices for Docker and Kubernetes environments."}
+            ]
+        }
     ],
     "projects": [
         {"id": 7, "name": "25th & Staffing", "url": "https://www.25thandstaffing.com/", "image": "/assets/projects/25thandStaffing.png"},
@@ -53,13 +70,13 @@
         {"id": 12, "name": "Vue", "image": "/assets/languages/vue.png"}
     ],
     "testimonials": [
-        {"id": 1, "name": "JobberMan SoftSkills", "url": "/asset/certificates/jobberman.pdf"},
-        {"id": 2, "name": "Business Foundation", "url": "/asset/certificates/business_foundation.pdf"},
-        {"id": 3, "name": "Team Work and Building", "url": "/asset/certificates/team_work_building.pdf"}
+        {"id": 1, "name": "JobberMan SoftSkills", "url": "/asset/pdf/certificates/jobberman.pdf"},
+        {"id": 2, "name": "Business Foundation", "url": "/asset/pdf/certificates/business_foundation.pdf"},
+        {"id": 3, "name": "Team Work and Building", "url": "/asset/pdf/certificates/team_work_building.pdf"}
     ],
     "badges": [
-        {"id": 1, "course": "CyberSecurity Intro", "name": "IBM Digital - Nation", "image": "/assets/badges/cyber-security.png", "url": "/asset/certificates/jobberman.pdf"},
-        {"id": 2, "course": "Getting Started with Storage", "name": "AWS Educate", "image": "/assets/badges/aws-starting-storage.png", "url": "/asset/certificates/jobberman.pdf"}
+        {"id": 1, "course": "CyberSecurity Intro", "name": "IBM Digital - Nation", "image": "assets/images/badges/cybersecurity.png", "url": "https://www.credly.com/badges/b18fe447-19ed-4d1c-b2be-a7d368006808/linked_in?t=riddfq"},
+        {"id": 2, "course": "Getting Started with Storage", "name": "AWS Educate", "image": "assets/images/badges/aws-storage.png", "url": "https://www.credly.com/badges/16e3bbf2-8561-46f9-8b46-fa3ca9d0ed8f/linked_in?t=ried5l"}
     ],
     "educations": [
         {"id" : 1, "name": "TITUS JANE HIGH SCHOOL", "graduation_year": "2013", "certificate": "SSCE (WAEC CERTIFICATE)"},
