@@ -1,0 +1,136 @@
+{
+    "specializations": [
+        {"_id": "5a6900fff467be65019a9001", "name": "website"}, 
+        {"_id": "5a6900fff467be65019a9004", "name": "webapps"}, 
+        {"_id": "5a6900fff467be65019a9003", "name": "mobile apps"}, 
+        {"_id": "5a6900fff467be65019a9002", "name": "things"}
+    ],
+    "operations": [
+        {
+            "_id": 1, 
+            "name": "backend", 
+            "image": "/public/assets/images/modals/backend.png",
+            "roles": [
+                {"_id": "5a6900fff467be65019a8001", "name": "Develop, test, and maintain robust backend systems and APIs to support frontend applications."},
+                {"_id": "5a6900fff467be65019a8002", "name": "Collaborate with frontend developers to integrate user-facing elements with server-side logic."},
+                {"_id": "5a6900fff467be65019a8003", "name": "Optimize application performance and scalability by implementing efficient data storage and retrieval methods."},
+                {"_id": "5a6900fff467be65019a8004", "name": "Write clean, maintainable, and well-documented code following best practices and coding standards."},
+                {"_id": "5a6900fff467be65019a8005", "name": "Troubleshoot and debug issues reported by users or QA team members to ensure smooth operation of applications."},
+                {"_id": "5a6900fff467be65019a8006", "name": "Stay up-to-date with emerging technologies and industry trends to continuously improve backend development processes."}
+            ]
+        },
+        {
+            "_id": 2, 
+            "name": "frontend",
+            "image": "/public/assets/images/modals/frontend.png",
+            "roles": [
+                {"_id": "5a6900fff467be65019b8001", "name": "Develop, test, and maintain frontend application logic to ensure functionality and performance."},
+                {"_id": "5a6900fff467be65019b8002", "name": "Collaborate with designers and backend developers to implement user interfaces and integrate frontend logic with backend systems."},
+                {"_id": "5a6900fff467be65019b8003", "name": "Write clean, efficient, and well-structured code using frontend technologies such as HTML, CSS, and JavaScript."},
+                {"_id": "5a6900fff467be65019b8004", "name": "Implement frontend logic and algorithms to support dynamic user interactions and data manipulation."},
+                {"_id": "5a6900fff467be65019b8005", "name": "Optimize application performance and responsiveness by identifying and resolving frontend bottlenecks."},
+                {"_id": "5a6900fff467be65019b8006", "name": "Stay informed about industry trends and best practices in frontend development to continuously improve coding standards and practices."}
+            ]
+        },
+        {
+            "_id": 3, 
+            "name": "dev ops", 
+            "image": "/public/assets/images/modals/devops.png",
+            "roles": [
+                {"_id": "5a6900fff467be65056b8027", "name": "Assist in the setup, configuration, and maintenance of Docker containers and Kubernetes clusters."},
+                {"_id": "5a6900fff467be65056b8028", "name": "Support the development and deployment of microservices-based applications using containerization technologies."},
+                {"_id": "5a6900fff467be65056b8029", "name": "Collaborate with the development team to streamline the CI/CD pipeline and automate deployment processes."},
+                {"_id": "5a6900fff467be65056b8021", "name": "Monitor and troubleshoot containerized applications to ensure availability, performance, and scalability."},
+                {"_id": "5a6900fff467be65056b8022", "name": "Participate in testing and validation of infrastructure changes and updates."},
+                {"_id": "5a6900fff467be65056b8024", "name": "Document procedures, configurations, and best practices for Docker and Kubernetes environments."}
+            ]
+        }
+    ],
+    "projects": [
+        {"id": 7, "name": "25th & Staffing", "url": "https://www.25thandstaffing.com/", "image": "/assets/projects/25thandStaffing.png"},
+        {"id": 6, "name": "Corporate Setup", "url": "https://corporate-setup.app/", "image": "/assets/projects/corporate-data.png"},
+        {"id": 1, "name": "Jamborow", "url": "https://jamborow.co.uk/", "image": "/assets/projects/jamborow.png"},
+        {"id": 2, "name": "Cubevest", "url": "https://cubevest.com", "image": "/assets/projects/cubevest.png"},
+        {"id": 3, "name": "I Data", "url": "https://idata.softinventsolutions.com/", "image": "/assets/projects/idata.png"},
+        {"id": 4, "name": "Zero", "url": "https://e-zero.surge.sh/#/auth/login", "image": "/assets/projects/zero.png"},
+        {"id": 5, "name": "Cast", "url": "https://cast.i.ng", "image": "/assets/projects/cast.png"}
+    ],
+    "stacks": [
+        {"id": 1, "name": "CSS", "image": "/assets/languages/css3.png"},
+        {"id": 2, "name": "Docker", "image": "/assets/languages/docker.png"},
+        {"id": 3, "name": "HTML", "image": "/assets/languages/html.png"},
+        {"id": 4, "name": "JavaScript", "image": "/assets/languages/js.png"},
+        {"id": 5, "name": "MYSQL", "image": "/assets/languages/mysql.png"},
+        {"id": 6, "name": "POSTGRES", "image": "/assets/languages/postgres.png"},
+        {"id": 7, "name": "Nodejs", "image": "/assets/languages/nodejs.png"},
+        {"id": 8, "name": "PHP", "image": "/assets/languages/php.png"},
+        {"id": 9, "name": "python", "image": "/assets/languages/python.png"},
+        {"id": 10, "name": "React Native", "image": "/assets/languages/react-native.png"},
+        {"id": 11, "name": "TypeScript", "image": "/assets/languages/ts.png"},
+        {"id": 12, "name": "Vue", "image": "/assets/languages/vue.png"}
+    ],
+    "testimonials": [
+        {"id": 1, "name": "JobberMan SoftSkills", "url": "/asset/pdf/certificates/jobberman.pdf"},
+        {"id": 2, "name": "Business Foundation", "url": "/asset/pdf/certificates/business_foundation.pdf"},
+        {"id": 3, "name": "Team Work and Building", "url": "/asset/pdf/certificates/team_work_building.pdf"}
+    ],
+    "badges": [
+        {"id": 1, "course": "CyberSecurity Intro", "name": "IBM Digital - Nation", "image": "assets/images/badges/cybersecurity.png", "url": "https://www.credly.com/badges/b18fe447-19ed-4d1c-b2be-a7d368006808/linked_in?t=riddfq"},
+        {"id": 2, "course": "Getting Started with Storage", "name": "AWS Educate", "image": "assets/images/badges/aws-storage.png", "url": "https://www.credly.com/badges/16e3bbf2-8561-46f9-8b46-fa3ca9d0ed8f/linked_in?t=ried5l"}
+    ],
+    "educations": [
+        {"id" : 1, "name": "TITUS JANE HIGH SCHOOL", "graduation_year": "2013", "certificate": "SSCE (WAEC CERTIFICATE)"},
+        {"id" : 2, "name": "BETH MANUEL COMPUTERS", "graduation_year": "2016 - 2017", "certificate": "Networks and CCTV Installation"},
+        {"id" : 3, "name": "TECHEND INCUBATION 3.0", "graduation_year": "2019 -2020", "certificate": "Free Web Development Training"},
+        {"id" : 4, "name": "National Open University", "graduation_year": "2018 - Present", "certificate": "Computer Science (BSc)"}
+    ],
+    "work-experiences": [
+        {"id": 1, "name": "BETH MANUEL COMPUTER", "date": "2017 – 2019", "position": "Network Engineer & CCTV Installation", 
+            "jd": [
+                {"id": 1,"name": "Maintain the cable and nodes on a weekly basis."}, 
+                {"id": 2, "name": "Extends existing Network and Install New Network (MAN and LAN)."}, 
+                {"id": 3, "name": "Make sure all CCTV is working and not blocked or interfered."}
+            ]
+        },
+        {"id": 2, "name": "S & G INTEGRATED SYSTEMS", "date": "2019 – 2021", "position": "Sales Representative", 
+            "jd": [
+                {"id": 1,"name": "Keep records of item uploaded online."}, 
+                {"id": 2, "name": "Attends physical customers and manages their complaints and their trouble questions."}
+            ]
+        },
+        {"id": 3, "name": "FREELANCE", "date": "2020 – 2021", "position": "Junior Backend Developer", 
+            "jd": [
+                {"id": 1,"name": "Build and create restful api endpoints."}, 
+                {"id": 2, "name": "Solves the logic part of Frontend (React) and its functionality."}
+            ]
+        },
+        {"id": 4, "name": "Universal Horizon Limited", "date": "2021 – 2022", "position": "Junior Backend Developer", 
+            "jd": [
+                {"id": 1,"name": "Maintenance and Updating of the Company Intranet Web Application"}, 
+                {"id": 2, "name": "Database Management."},
+                {"id": 3, "name": "Generating Reports for workers about performance."},
+                {"id": 4, "name": "Developing and Updating Web Applications."}
+            ]
+        },
+        {"id": 5, "name": "Jamborow", "date": "2022", "position": "FULLSTACK SOFTWARE DEVELOPER", 
+            "jd": [
+                {"id": 1,"name": "Write Api with Laravel, Integrate and restructure code."}, 
+                {"id": 2, "name": "Developing and Updating Web Applications."}
+            ]
+        },
+        {"id": 5, "name": "TechEnd", "date": "2022", "position": "FULLSTACK SOFTWARE DEVELOPER", 
+            "jd": [
+                {"id": 1,"name": "Consume Api with some frontend technologies (React and React Native)."}, 
+                {"id": 2, "name": "Write Api with Laravel, Integrate and restructure code."},
+                {"id": 3, "name": "Developing and Updating Web Applications."}
+            ]
+        },
+        {"id": 6, "name": "TechEnd", "date": "2022 – PRESENT", "position": "BACKEND DEVELOPER", 
+            "jd": [
+                {"id": 1,"name": "Write Api with Laravel, Integrate and restructure code."}, 
+                {"id": 2, "name": "Consume Api with some frontend technologies (React)."},
+                {"id": 3, "name": "Developing and Updating Web Applications."}
+            ]
+        }
+    ]
+}
