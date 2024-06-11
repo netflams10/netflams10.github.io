@@ -1,4 +1,4 @@
-import "./assets/scss/main.scss";
+// import "./assets/scss/main.scss";
 
 import { createApp } from "vue";
 import App from "./App.vue";
@@ -6,6 +6,7 @@ import router from "./router";
 import store from "./store";
 
 // icons
+import "@fortawesome/fontawesome-free/js/all";
 
 const app = createApp(App);
 

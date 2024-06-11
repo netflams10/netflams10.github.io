@@ -28,12 +28,29 @@
     <section class="jd-container">
       <article class="jd-wrapper">
         <h2>Roles</h2>
-        <div v-for="role in roles" :key="role._id" class="roles_container">
-          <img :src="role.image" alt="role.name" class="modal_pagination" />
-          <span>{{ role.name }}</span>
-          <div v-for="task in role.roles" :key="task._id">
-            <span>{{ task.name }}</span>
-          </div>
+
+        <div class="modal__container">
+          <Swiper
+            :grab-cursor="true"
+            :autoplay="{
+              delay: 1000,
+              disableOnInteraction: false,
+            }"
+          >
+            <SwiperSlide v-for="role in roles" :key="role._id">
+              <span>{{ role.name }}</span>
+              <div v-for="task in role.roles" :key="task._id">
+                <span>{{ task.name }}</span>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide v-for="role in roles" :key="role._id">
+              <span>{{ role.name }}</span>
+              <div v-for="task in role.roles" :key="task._id">
+                <span>{{ task.name }}</span>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </article>
     </section>
@@ -44,8 +61,10 @@
 import { mapState } from "vuex";
 import gsap from "gsap";
 import SplitTextJS from "split-text-js";
+import { Swiper, SwiperSlide } from "swiper/vue";
 
 export default {
+  components: { Swiper, SwiperSlide },
   data: () => {
     return {
       type_value: "",
@@ -87,6 +106,9 @@ export default {
     setTimeout(this.type_text, 200);
     setTimeout(this.flip_box, 2000);
   },
+  set_image() {
+    console.log("Changed Something");
+  },
 };
 </script>
 
@@ -97,7 +119,18 @@ h3 {
 }
 
 .jd-container {
+  width: 100%;
   .jd-wrapper {
+    .modal__container {
+      width: 100%;
+      .swiper {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        height: 250px;
+      }
+    }
+
     .modal_pagination {
       width: 40px;
       height: 30px;
