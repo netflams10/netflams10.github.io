@@ -25,7 +25,7 @@ export default {
 }
 
 .container {
-  border: 2px solid red;
+  border: 0.5px solid red;
 
   transition: 0.3s ease;
 

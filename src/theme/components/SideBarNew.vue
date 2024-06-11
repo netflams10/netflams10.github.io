@@ -1,4 +1,5 @@
 <script>
+// import avatar from "../../assets/images/my_image/ope.jpeg";
 import SideBarLinkVue from "./SideBarLink.vue";
 import { collapsed, toggle_sidebar, sidebar_width } from "./state";
 
@@ -18,7 +19,9 @@ export default {
         <div>O</div>
       </span>
       <span v-else>
-        <div>I</div>
+        <div>
+          <!-- <img :src="assets" alt="My Very own face" /> -->
+        </div>
       </span>
     </h1>
 
