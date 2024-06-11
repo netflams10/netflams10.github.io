@@ -5,5 +5,3 @@
 <script setup>
 import Theme from "./theme/Theme.vue";
 </script>
-
-<style lang="scss"></style>

@@ -1,6 +1,6 @@
 <template>
   <SideBarNew />
-  <div :style="{ 'margin-left': sidebar_width }" class="">
+  <div :style="{ 'margin-left': sidebar_width }" class="container">
     <RouterView />
   </div>
 </template>
@@ -17,10 +17,20 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 :root {
   --sidebar-bg-color: #2f855a;
   --sidebar-item-hover: #38a169;
   --sidebar-item-active: #276749;
+}
+
+.container {
+  border: 2px solid red;
+
+  transition: 0.3s ease;
+
+  height: 100vh;
+  overflow: hidden;
+  width: "100%";
 }
 </style>

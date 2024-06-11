@@ -23,6 +23,26 @@ export default {
     </h1>
 
     <SideBarLinkVue to="/" icon="fas fa-home">Home</SideBarLinkVue>
+    <SideBarLinkVue to="/projects" icon="fa-solid fa-diagram-project"
+      >Project</SideBarLinkVue
+    >
+    <SideBarLinkVue to="/articles" icon="fa-regular fa-newspaper"
+      >Articles</SideBarLinkVue
+    >
+    <SideBarLinkVue to="/stacks" icon="fa-solid fa-layer-group"
+      >Stacks</SideBarLinkVue
+    >
+    <SideBarLinkVue to="/open-source" icon="fa-brands fa-osi"
+      >Open Source</SideBarLinkVue
+    >
+    <SideBarLinkVue to="/education" icon="fa-solid fa-graduation-cap"
+      >Education</SideBarLinkVue
+    >
+    <SideBarLinkVue to="/work-experience" icon="fa-solid fa-briefcase"
+      >Education</SideBarLinkVue
+    >
+
+    <!-- <i class=""></i> -->
 
     <span
       class="collapse-icon"
@@ -41,7 +61,7 @@ export default {
 
   float: left;
   position: fixed;
-  z-index: 1;
+  z-index: 100000;
   top: 0;
   left: 0;
   bottom: 0;
