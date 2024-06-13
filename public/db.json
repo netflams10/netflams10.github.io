@@ -53,7 +53,11 @@
         {"id": 2, "name": "Cubevest", "url": "https://cubevest.com", "image": "/assets/projects/cubevest.png"},
         {"id": 3, "name": "I Data", "url": "https://idata.softinventsolutions.com/", "image": "/assets/projects/idata.png"},
         {"id": 4, "name": "Zero", "url": "https://e-zero.surge.sh/#/auth/login", "image": "/assets/projects/zero.png"},
-        {"id": 5, "name": "Cast", "url": "https://cast.i.ng", "image": "/assets/projects/cast.png"}
+        {"id": 5, "name": "Cast", "url": "https://cast.i.ng", "image": "/assets/projects/cast.png"},
+        {"id": 8, "name": "Zygomed", "url": "https://www.shop.zygomedltd.com/", "image": "/assets/projects/zygomed.png"},
+        {"id": 9, "name": "Teeka4", "url": "https://teeka4.com/", "image": "/assets/projects/teeka4.png"},
+        {"id": 10, "name": "Candidate Portal", "url": "https://candidate.25thandstaffing.com", "image": "/assets/projects/candidate.png"},
+        {"id": 11, "name": "Era X", "url": "https://play.google.com/store/apps/details?id=com.EraX.corporateSetup&hl=en&gl=US", "image": "/assets/projects/era_x.png"}
     ],
     "stacks": [
         {"id": 1, "name": "CSS", "image": "/assets/languages/css3.png"},

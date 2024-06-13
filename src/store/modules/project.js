@@ -1,4 +1,4 @@
-import axios from "axios";
+import axiosInstance from "@/utility/axiosInstance";
 
 const project = {
   state() {
@@ -15,7 +15,7 @@ const project = {
   actions: {
     async get_projects({ commit }) {
       try {
-        const response = await axios.get("");
+        const response = await axiosInstance.get("");
 
         commit("set_projects", response.data?.projects);
       } catch (error) {}
