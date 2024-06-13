@@ -69,7 +69,7 @@ export default {
       </SideBarSocialLink>
 
       <SideBarSocialLink
-        to="https://www.linkedin.com/in/opeyemi-amusan-b0a2a8152/"
+        to="https://x.com/segunflams?s=09"
         icon="fa-brands fa-square-twitter"
       >
         Twitter
