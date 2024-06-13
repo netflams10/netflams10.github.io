@@ -1,11 +1,12 @@
 <script>
-// import avatar from "../../assets/images/my_image/ope.jpeg";
+import avatar from "../../assets/images/my_image/cartoon.jpeg";
 import SideBarLinkVue from "./SideBarLink.vue";
+import SideBarSocialLink from "./SideBarSocialLink.vue";
 import { collapsed, toggle_sidebar, sidebar_width } from "./state";
 
 export default {
   props: {},
-  components: { SideBarLinkVue },
+  components: { SideBarLinkVue, SideBarSocialLink },
   setup() {
     return { collapsed, sidebar_width, toggle_sidebar };
   },
@@ -14,38 +15,67 @@ export default {
 
 <template>
   <div class="sidebar" :style="{ width: sidebar_width }">
-    <h1>
+    <div class="sidebar-header">
       <span v-if="collapsed">
-        <div>O</div>
+        <h1>O</h1>
       </span>
       <span v-else>
         <div>
-          <!-- <img :src="assets" alt="My Very own face" /> -->
+          <img
+            src="/assets/images/my_image/ope.jpeg"
+            alt="My Very own face"
+            class=""
+          />
         </div>
       </span>
-    </h1>
+    </div>
 
-    <SideBarLinkVue to="/" icon="fas fa-home">Home</SideBarLinkVue>
-    <SideBarLinkVue to="/projects" icon="fa-solid fa-diagram-project"
-      >Project</SideBarLinkVue
-    >
-    <SideBarLinkVue to="/articles" icon="fa-regular fa-newspaper"
-      >Articles</SideBarLinkVue
-    >
-    <SideBarLinkVue to="/stacks" icon="fa-solid fa-layer-group"
-      >Stacks</SideBarLinkVue
-    >
-    <SideBarLinkVue to="/open-source" icon="fa-brands fa-osi"
-      >Open Source</SideBarLinkVue
-    >
-    <SideBarLinkVue to="/education" icon="fa-solid fa-graduation-cap"
-      >Education</SideBarLinkVue
-    >
-    <SideBarLinkVue to="/work-experience" icon="fa-solid fa-briefcase"
-      >Education</SideBarLinkVue
-    >
+    <div class="sidebar--nav-list">
+      <SideBarLinkVue to="/" icon="fas fa-home">Home</SideBarLinkVue>
+      <SideBarLinkVue to="/projects" icon="fa-solid fa-diagram-project"
+        >Project</SideBarLinkVue
+      >
+      <SideBarLinkVue to="/articles" icon="fa-regular fa-newspaper"
+        >Articles</SideBarLinkVue
+      >
+      <SideBarLinkVue to="/stacks" icon="fa-solid fa-layer-group"
+        >Stacks</SideBarLinkVue
+      >
+      <SideBarLinkVue to="/open-source" icon="fa-brands fa-osi"
+        >Open Source</SideBarLinkVue
+      >
+      <SideBarLinkVue to="/education" icon="fa-solid fa-graduation-cap"
+        >Education</SideBarLinkVue
+      >
+      <SideBarLinkVue to="/work-experience" icon="fa-solid fa-briefcase"
+        >Work Experience</SideBarLinkVue
+      >
+    </div>
 
-    <!-- <i class=""></i> -->
+    <!-- Social links -->
+    <div class="sidebar--nav-list">
+      <SideBarSocialLink
+        to="https://github.com/netflams10"
+        icon="fa-brands fa-github"
+      >
+        Github
+      </SideBarSocialLink>
+
+      <SideBarSocialLink
+        to="https://www.linkedin.com/in/opeyemi-amusan-b0a2a8152/"
+        icon="fa-brands fa-linkedin"
+      >
+        LinkedIn
+      </SideBarSocialLink>
+
+      <SideBarSocialLink
+        to="https://www.linkedin.com/in/opeyemi-amusan-b0a2a8152/"
+        icon="fa-brands fa-square-twitter"
+      >
+        Twitter
+      </SideBarSocialLink>
+    </div>
+    <!-- End Social links -->
 
     <span
       class="collapse-icon"
@@ -88,5 +118,29 @@ export default {
 .rotate-180 {
   transform: rotate(180deg);
   transition: 0.2s linear;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 1px solid var(--sidebar-item-hover-href);
+}
+
+.sidebar-header {
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.sidebar--nav-list {
+  margin: 1em 0;
 }
 </style>
