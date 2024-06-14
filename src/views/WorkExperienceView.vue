@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="">
-      <h1>Badges</h1>
+      <h1>Work Experience</h1>
       <div
         v-for="work_experience in work_experiences"
         :key="work_experience.id"
@@ -28,12 +28,4 @@ export default {
 };
 </script>
 
-<style>
-/* @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-} */
-</style>
+<style></style>

@@ -1,27 +1,27 @@
 import axiosInstance from "@/utility/axiosInstance";
 
-const work_experience = {
+const article = {
   state() {
     return {
-      work_experiences: [],
+      articles: [],
     };
   },
   mutations: {
-    set_work_experiences(state, payload) {
-      state.work_experiences = payload;
+    set_articles(state, payload) {
+      state.articles = payload;
     },
   },
   getters: {},
   actions: {
-    async get_work_experiences({ commit }) {
+    async get_articles({ commit }) {
       try {
         const response = await axiosInstance.get("");
 
-        commit("set_work_experiences", response.data?.work_experiences);
+        commit("set_articles", response.data?.articles);
       } catch (error) {}
       // console.log("Action got here g", context, payload);
     },
   },
 };
 
-export default work_experience;
+export default article;

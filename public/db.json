@@ -59,6 +59,12 @@
         {"id": 10, "name": "Candidate Portal", "url": "https://candidate.25thandstaffing.com", "image": "/assets/projects/candidate.png"},
         {"id": 11, "name": "Era X", "url": "https://play.google.com/store/apps/details?id=com.EraX.corporateSetup&hl=en&gl=US", "image": "/assets/projects/era_x.png"}
     ],
+    "articles":[
+
+    ],
+    "open_sources": [
+
+    ],
     "stacks": [
         {"id": 1, "name": "CSS", "image": "/assets/languages/css3.png"},
         {"id": 2, "name": "Docker", "image": "/assets/languages/docker.png"},
@@ -88,7 +94,7 @@
         {"id" : 3, "name": "TECHEND INCUBATION 3.0", "graduation_year": "2019 -2020", "certificate": "Free Web Development Training"},
         {"id" : 4, "name": "National Open University", "graduation_year": "2018 - Present", "certificate": "Computer Science (BSc)"}
     ],
-    "work-experiences": [
+    "work_experiences": [
         {"id": 1, "name": "BETH MANUEL COMPUTER", "date": "2017 – 2019", "position": "Network Engineer & CCTV Installation", 
             "jd": [
                 {"id": 1,"name": "Maintain the cable and nodes on a weekly basis."}, 

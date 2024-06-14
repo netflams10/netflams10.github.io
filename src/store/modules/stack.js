@@ -1,4 +1,4 @@
-import axios from "axios";
+import axiosInstance from "@/utility/axiosInstance";
 
 const stack = {
   state() {
@@ -15,7 +15,7 @@ const stack = {
   actions: {
     async get_stacks({ commit }) {
       try {
-        const response = await axios.get("");
+        const response = await axiosInstance.get("");
 
         commit("set_stacks", response.data?.stacks);
       } catch (error) {}
