@@ -1,6 +1,13 @@
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Gwendolyn:wght@400;700&family=Satisfy&display=swap');
+
+$base-background-color: #222222;
+$base-background-hover: #455a64;
+$base-text-color: #d3d3d3;
+$base-text-light: #ffffff;
+$base-text-special-span: #964b00;
+$base-text-normal-span: #c99a6b;
 
 * {
   margin: 0;
@@ -11,131 +18,20 @@
 body {
   width: 100vw;
   height: 100vh;
+  font-family: serif;
+  color: $base-text-light;
   position: relative;
   overflow: hidden;
 }
 
-// :root {
-//   --primary: #444;
-//   --primary-alt: #36454F;
-//   --grey: #64748b;
-//   --dark: #334155;
-//   --dark-alt: #1e293b;
-//   --light: #f1f5f9;
-//   --sidebar-width: 300px;
-// }
+a {
+  text-decoration: none;
+}
 
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-//   font-family: "Fira sans", sans-serif;
-// }
+.main-container {
+  padding: 25px;
+  overflow: hidden;
+}
 
-// body {
-//   margin:0;
-//   padding: 0;
-//   box-sizing: border-box;
-//   background: var(--light);
-//   height: 100vh;
-//   // cursor: none;
-// }
-
-// /** End Playful Cursor **/
-
-// button {
-//   appearance: none;
-//   border: none;
-//   outline: none;
-//   background: none;
-// }
-
-// a {
-//   text-decoration: none;
-//   color: black;
-// }
-
-// .app {
-//   display: flex;
-//   // background-color: yellow;
-
-//   main {
-//     // flex: 1 1 0;
-//     padding: 2rem;
-//     overflow: hidden;
-//     background-color: #808080;
-//     height: 100vh;
-//     // width: 100%;
-
-//     @media screens and (max-width: 768px) {
-//       padding-left: 6rem;
-//     }
-//   }
-// }
-
-
-// /** Cursor **/
-// .cursor {
-//   width: 1rem;
-//   height: 1rem;
-//   position: absolute;
-//   transform: translate(-50%, -50%);
-//   border: 2px solid var(--dark);
-//   border-radius: 50%;
-//   pointer-events: none;
-//   top: -1rem;
-//   left: -1rem;
-//   animation: cursorAnim 0.5s infinite alternate;
-// }
-
-// .cursor::after {
-//   content: "";
-//   width: 1rem;
-//   height: 1rem;
-//   position: absolute;
-//   transform: translate(-50%, -50%);
-//   border: 6px solid var(--dark);
-//   border-radius: 50%;
-//   pointer-events: none;
-//   opacity: 0.3;
-//   top: -1rem;
-//   left: -1rem;
-//   animation: cursorAfterEffect 0.5s infinite alternate;
-// }
-
-// .expands {
-//   animation: clickExpands 0.5s forwards;
-//   border: 1px solid red;
-// }
-
-// @keyframes cursorAnim {
-//   from {
-//     transform: scale(1);
-//   }
-//   to {
-//     transform: scale(0.7);
-//   }
-// }
-
-// @keyframes cursorAfterEffect {
-//   from {
-//     transform: scale(1);
-//   }
-//   to {
-//     transform: scale(0.4);
-//   }
-// }
-
-// @keyframes clickExpands {
-//   0% {
-//     transform: scale(.5);
-//   }
-//   50% {
-//     transform: scale(1);
-//   }
-//   100% {
-//     transform: scale(.5);
-//     opacity: 0;
-//   }
-// }
-/** End Cursor **/
+@import "./components/homepage.scss";
+@import "./components/carousel.scss"

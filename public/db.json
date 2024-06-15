@@ -9,7 +9,7 @@
         {
             "_id": 1, 
             "name": "backend", 
-            "image": "/assets/images/modals/backend.png",
+            "image": "/assets/images/role_icons/backend.png",
             "roles": [
                 {"_id": "5a6900fff467be65019a8001", "name": "Develop, test, and maintain robust backend systems and APIs to support frontend applications."},
                 {"_id": "5a6900fff467be65019a8002", "name": "Collaborate with frontend developers to integrate user-facing elements with server-side logic."},
@@ -22,7 +22,7 @@
         {
             "_id": 2, 
             "name": "frontend",
-            "image": "/assets/images/modals/frontend.png",
+            "image": "/assets/images/role_icons/frontend.png",
             "roles": [
                 {"_id": "5a6900fff467be65019b8001", "name": "Develop, test, and maintain frontend application logic to ensure functionality and performance."},
                 {"_id": "5a6900fff467be65019b8002", "name": "Collaborate with designers and backend developers to implement user interfaces and integrate frontend logic with backend systems."},
@@ -35,7 +35,7 @@
         {
             "_id": 3, 
             "name": "dev ops", 
-            "image": "/assets/images/modals/devops.png",
+            "image": "/assets/images/role_icons/devops.png",
             "roles": [
                 {"_id": "5a6900fff467be65056b8027", "name": "Assist in the setup, configuration, and maintenance of Docker containers and Kubernetes clusters."},
                 {"_id": "5a6900fff467be65056b8028", "name": "Support the development and deployment of microservices-based applications using containerization technologies."},

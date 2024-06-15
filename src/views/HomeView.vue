@@ -1,70 +1,12 @@
-<template>
-  <main>
-    <section>
-      <h2>
-        Hi my name is
-        <span class="typed-text">{{ type_value }}</span>
-        <span
-          v-show="type_status"
-          class="cursor_display"
-          :class="{ typing: type_status }"
-          >&nbsp;</span
-        >
-      </h2>
-      <h3>
-        I design and develop
-        <span
-          class="typed-text"
-          v-for="specialization in specializations"
-          :key="specialization._id"
-          >{{ specialization.name }}</span
-        >
-        <span class="cursor">&nbsp;</span>
-      </h3>
-
-      <h4>Could you browse through to see more...</h4>
-    </section>
-
-    <section class="jd-container">
-      <article class="jd-wrapper">
-        <h2>Roles</h2>
-
-        <div class="modal__container">
-          <Swiper
-            :grab-cursor="true"
-            :autoplay="{
-              delay: 1000,
-              disableOnInteraction: false,
-            }"
-          >
-            <SwiperSlide v-for="role in roles" :key="role._id">
-              <span>{{ role.name }}</span>
-              <div v-for="task in role.roles" :key="task._id">
-                <span>{{ task.name }}</span>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide v-for="role in roles" :key="role._id">
-              <span>{{ role.name }}</span>
-              <div v-for="task in role.roles" :key="task._id">
-                <span>{{ task.name }}</span>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </article>
-    </section>
-  </main>
-</template>
-
 <script>
-import { mapState } from "vuex";
 import gsap from "gsap";
+import { mapState } from "vuex";
 import SplitTextJS from "split-text-js";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import Carousel from "../components/uis/Carousel.vue";
 
 export default {
-  components: { Swiper, SwiperSlide },
+  components: { Swiper, SwiperSlide, Carousel },
   data: () => {
     return {
       type_value: "",
@@ -80,7 +22,6 @@ export default {
   },
   computed: mapState({
     specializations: ({ role }) => role.specializations,
-    roles: ({ role }) => role.roles,
   }),
   methods: {
     type_text() {
@@ -112,51 +53,55 @@ export default {
 };
 </script>
 
+<template>
+  <main class="main-container">
+    <section class="header-section">
+      <h2 class="header-section--title">
+        <span><i class="fa-solid fa-arrow-right-long" /></span>
+        Hi, my name is
+        <span class="header-section--typed-text">{{ type_value }}</span>
+        <span
+          v-show="type_status"
+          class="cursor_display"
+          :class="{ typing: type_status }"
+          >&nbsp;</span
+        >
+      </h2>
+
+      <h2 class="header-section--sub-title">
+        I design and develop
+        <span
+          class="header-section--typed-text"
+          v-for="specialization in specializations"
+          :key="specialization._id"
+          >{{ specialization.name }}</span
+        >
+        <span class="cursor">&nbsp;</span>
+      </h2>
+
+      <h2 class="header-section--note">
+        Could you browse through to see more...
+      </h2>
+    </section>
+
+    <section class="role-section">
+      <h2 class="role-section--header">Roles</h2>
+
+      <div class="role-section--carousel-container">
+        <Carousel />
+      </div>
+    </section>
+  </main>
+</template>
+
 <style lang="scss" scoped>
 h3 {
   font-size: 1.5rem;
   font-weight: normal;
 }
 
-.jd-container {
-  width: 100%;
-  .jd-wrapper {
-    .modal__container {
-      width: 100%;
-      .swiper {
-        width: 100%;
-        height: 200px;
-        overflow: hidden;
-        height: 250px;
-      }
-    }
-
-    .modal_pagination {
-      width: 40px;
-      height: 30px;
-    }
-  }
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: normal;
-
-  span.typed-text {
-    color: #964b00;
-  }
-
-  span.cursor_display {
-    display: inline-block;
-    margin-left: 3px;
-    width: 4px;
-    background-color: #fff;
-    animation: cursorBlink 1s infinite;
-  }
-
-  span.cursor_display.typing {
-    animation: none;
-  }
+span.cursor_display.typing {
+  animation: none;
 }
 
 @keyframes cursorBlink {

@@ -28,12 +28,14 @@ export default {
 }
 
 .container {
-  border: 0.5px solid red;
+  border: 0.5px solid var(--sidebar-item-hover);
 
   transition: 0.3s ease;
 
   height: 100vh;
   overflow: hidden;
   width: "100%";
+
+  background-color: var(--sidebar-bg-color);
 }
 </style>

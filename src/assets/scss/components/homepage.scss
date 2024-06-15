@@ -1,0 +1,73 @@
+h2 {
+    font-family: "Bellota", "Playfair Display", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.header-section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    .header-section--title {
+        font-size: 2em;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        .header-section--typed-text {
+            color: $base-text-special-span;
+        }
+        // display: flex;
+        // align-items: center;
+
+        .fa-arrow-right-long {
+            color: $base-text-normal-span;
+            font-size: 25px;
+        }
+    }
+
+    .header-section--sub-title {
+        font-size: 1.5em;
+        padding-top: .2em;
+        padding-bottom: .1em;
+        .header-section--typed-text {
+            color: $base-text-special-span;
+        }
+    }
+
+    .header-section--note {
+        font-size: 1em;
+        color: $base-text-normal-span;
+        font-weight: bold;
+    }
+}
+
+.role-section {
+    width: 100%;
+    height: 100%;
+
+    .role-section--header {
+        font-size: 1.7em;
+        color: $base-text-normal-span;
+    }
+
+    .role-section--carousel-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-top: .5em;
+        padding-bottom: .5em;
+
+
+        .role-section--carousel-container-swiper-container {
+            width: 100%;
+            height: 100%;
+            border: 1px blue solid;
+            .role-section--carousel-container-swiperslide {
+                border: 1px solid red;
+
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+}
