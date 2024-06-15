@@ -28,10 +28,16 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+  text-align: left;
+}
+
 .main-container {
   padding: 25px;
   overflow: hidden;
 }
+
 
 @import "./components/homepage.scss";
 @import "./components/carousel.scss"

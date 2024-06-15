@@ -28,14 +28,14 @@ export default {
       slide-width="100%"
       class="carousel-container-slide"
     >
-      <div>
+      <div class="carousel-header">
         <img :src="role.image" :alt="role.name" />
         <h2>{{ role.name }}</h2>
       </div>
 
-      <div>
+      <div class="carousel-body">
         <ul v-for="jd in role.roles" :key="jd._id">
-          <li>{{ jd.name }}</li>
+          <li><i class="fa-solid fa-arrow-right-long" />{{ jd.name }}</li>
         </ul>
       </div>
     </slide>

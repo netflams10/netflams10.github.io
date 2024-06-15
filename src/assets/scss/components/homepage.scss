@@ -71,3 +71,36 @@ h2 {
         
     }
 }
+
+.carousel-header {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 70px;
+        margin: .5em 1.5em
+    }
+
+    h2 {
+        text-transform: capitalize;
+    }
+}
+
+.carousel-body {
+    padding: .5em 1.5em;
+
+    ul {
+       
+        li {
+            display: flex;
+            align-items: center;
+            font-size: 1em;
+            .fa-arrow-right-long {
+                color: $base-text-special-span;
+                font-size: .8em;
+                // margin-right: .5em;
+                margin: .4em 0;
+            }
+        }
+    }
+}
