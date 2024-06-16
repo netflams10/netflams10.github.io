@@ -1,12 +1,10 @@
 <script>
-import gsap from "gsap";
 import { mapState } from "vuex";
-import SplitTextJS from "split-text-js";
-import { Swiper, SwiperSlide } from "swiper/vue";
+import HomepageSubHeader from "../components/uis/HomepageSubHeader.vue";
 import Carousel from "../components/uis/Carousel.vue";
 
 export default {
-  components: { Swiper, SwiperSlide, Carousel },
+  components: { Carousel, HomepageSubHeader },
   data: () => {
     return {
       type_value: "",
@@ -34,21 +32,18 @@ export default {
         this.type_status = false;
       }
     },
-    flip_box() {
-      const titles = gsap.utils.toArray("p");
-      const tl = gsap.timeline();
+    // flip_box() {
+    //   const titles = gsap.utils.toArray("p");
+    //   const tl = gsap.timeline();
 
-      titles.forEach((title) => {
-        const splitTitle = new SplitTextJS(title);
-      });
-    },
+    //   titles.forEach((title) => {
+    //     const splitTitle = new SplitTextJS(title);
+    //   });
+    // },
   },
   created() {
     setTimeout(this.type_text, 200);
-    setTimeout(this.flip_box, 2000);
-  },
-  set_image() {
-    console.log("Changed Something");
+    // setTimeout(this.flip_box, 2000);
   },
 };
 </script>
@@ -68,7 +63,7 @@ export default {
         >
       </h2>
 
-      <h2 class="header-section--sub-title">
+      <!-- <h2 class="header-section--sub-title">
         I design and develop
         <span
           class="header-section--typed-text"
@@ -77,7 +72,9 @@ export default {
           >{{ specialization.name }}</span
         >
         <span class="cursor">&nbsp;</span>
-      </h2>
+      </h2> -->
+
+      <HomepageSubHeader />
 
       <h2 class="header-section--note">
         Could you browse through to see more...
@@ -94,28 +91,28 @@ export default {
   </main>
 </template>
 
-<style lang="scss" scoped>
-h3 {
-  font-size: 1.5rem;
-  font-weight: normal;
-}
+<style>
+/* // h3 {
+//   font-size: 1.5rem;
+//   font-weight: normal;
+// }
 
-span.cursor_display.typing {
-  animation: none;
-}
+// span.cursor_display.typing {
+//   animation: none;
+// }
 
-@keyframes cursorBlink {
-  25% {
-    background-color: #fff;
-  }
-  50% {
-    background-color: transparent;
-  }
-  75% {
-    background-color: #964b00;
-  }
-  100% {
-    background-color: transparent;
-  }
-}
+// @keyframes cursorBlink {
+//   25% {
+//     background-color: #fff;
+//   }
+//   50% {
+//     background-color: transparent;
+//   }
+//   75% {
+//     background-color: #964b00;
+//   }
+//   100% {
+//     background-color: transparent;
+//   }
+// } */
 </style>

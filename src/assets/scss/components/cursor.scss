@@ -1,0 +1,35 @@
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+  
+    span.typed-text {
+      color: #964b00;
+    }
+  
+    span.cursor_display {
+      display: inline-block;
+      margin-left: 3px;
+      width: 4px;
+      background-color: #fff;
+      animation: cursorBlink 1s infinite;
+    }
+  
+    span.cursor_display.typing {
+      animation: none;
+    }
+}
+
+@keyframes cursorBlink {
+    25% {
+      background-color: #fff;
+    }
+    50% {
+      background-color: transparent;
+    }
+    75% {
+      background-color: #964b00;
+    }
+    100% {
+      background-color: transparent;
+    }
+}
