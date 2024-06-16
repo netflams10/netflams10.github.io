@@ -31,6 +31,23 @@ h2 {
         .header-section--typed-text {
             color: $base-text-special-span;
         }
+
+        // cursor display
+        span.typed-text {
+            color: $base-text-normal-span;
+        }
+
+        span.cursor_display {
+            display: inline-block;
+            margin-left: 3px;
+            width: 4px;
+            background-color: #fff;
+            animation: cursorBlink 1s infinite;
+        }
+        
+        span.cursor_display.typing {
+            animation: none;
+        }
     }
 
     .header-section--note {

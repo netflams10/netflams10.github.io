@@ -19,7 +19,7 @@ export default {
       current_text: "", // current translated text
       current_index: 0, // default list array index
       default_lists: [],
-      typing_speed: 500, // timeout speed
+      typing_speed: 300, // timeout speed
       checkers: false,
       max_text_len: 0, // current text length
       min_text_len: 0, // decreasing length
@@ -29,19 +29,12 @@ export default {
   methods: {
     // setting current index
     set_current_index(index) {
-      if (index > this.default_lists.length) return;
+      // if (index > this.default_lists.length) return;
       this.max_text_len = this.default_lists[index].name.length;
       this.min_text_len = this.default_lists[index].name.length;
       this.current_text = this.default_lists[index].name;
       this.typing_length = 0;
       this.current_index = index;
-      console.log(
-        this.default_lists[index].name,
-        this.current_index,
-        this.min_text_len,
-        this.max_text_len,
-        this.current_text
-      );
     },
     // typing the data
     text_typing() {
@@ -85,6 +78,6 @@ export default {
   <h2 class="header-section--sub-title">
     I design and develop
     <span class="header-section--typed-text">{{ text }}</span>
-    <span class="cursor typing">&nbsp;</span>
+    <span class="cursor_display type_status">&nbsp;</span>
   </h2>
 </template>

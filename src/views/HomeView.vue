@@ -10,7 +10,7 @@ export default {
       type_value: "",
       type_status: false,
       type_array: "Opeyemi Isaiah.",
-      typing_speed: 200,
+      typing_speed: 400,
       char_index: 0,
     };
   },
@@ -63,17 +63,6 @@ export default {
         >
       </h2>
 
-      <!-- <h2 class="header-section--sub-title">
-        I design and develop
-        <span
-          class="header-section--typed-text"
-          v-for="specialization in specializations"
-          :key="specialization._id"
-          >{{ specialization.name }}</span
-        >
-        <span class="cursor">&nbsp;</span>
-      </h2> -->
-
       <HomepageSubHeader />
 
       <h2 class="header-section--note">
@@ -91,28 +80,4 @@ export default {
   </main>
 </template>
 
-<style>
-/* // h3 {
-//   font-size: 1.5rem;
-//   font-weight: normal;
-// }
-
-// span.cursor_display.typing {
-//   animation: none;
-// }
-
-// @keyframes cursorBlink {
-//   25% {
-//     background-color: #fff;
-//   }
-//   50% {
-//     background-color: transparent;
-//   }
-//   75% {
-//     background-color: #964b00;
-//   }
-//   100% {
-//     background-color: transparent;
-//   }
-// } */
-</style>
+<style></style>
