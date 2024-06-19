@@ -1,0 +1,46 @@
+$width: calc(1920px/6);
+$height: calc(1080/6);
+
+.project--container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: .5em;
+
+    .projext--container-list {
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        gap: 2.5em;
+        grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
+        grid-auto-rows: $height;
+        grid-auto-flow: dense;
+        
+        .projext--container-list-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: .8em;
+            }
+        }
+
+        .wide {
+            grid-column: span 2;
+        }
+
+        .tall {
+            grid-row: span 2;
+        }
+
+        .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    }
+}

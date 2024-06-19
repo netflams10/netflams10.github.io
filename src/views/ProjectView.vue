@@ -1,14 +1,20 @@
 <template>
-  <main>
+  <main class="project--container">
     <div class="">
       <h1>Project</h1>
     </div>
-    <div>
-      <div v-for="project in projects" :key="project.id">
-        <div>
+
+    <div class="projext--container-list">
+      <div
+        v-for="project in projects"
+        :key="project.id"
+        class="projext--container-list-item"
+      >
+        <img :src="project.image" :alt="project.name" />
+        <!-- <div>
           <h3>{{ project.name }}</h3>
           <div>{{ project.url }}</div>
-        </div>
+        </div> -->
       </div>
     </div>
   </main>
@@ -27,12 +33,4 @@ export default {
 };
 </script>
 
-<style>
-/* @media (min-width: 1024px) {
-  .about {
-    max-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-} */
-</style>
+<style></style>

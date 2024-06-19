@@ -38,7 +38,15 @@ li {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 
 @import "./components/homepage.scss";
+@import "./components/project.scss";
 @import "./components/carousel.scss";
-@import "./components/cursor.scss"
+@import "./components/cursor.scss";
