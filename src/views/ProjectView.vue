@@ -30,6 +30,7 @@ export default {
   computed: mapState({
     projects: ({ project }) => project.projects,
   }),
+  watch() {},
 };
 </script>
 

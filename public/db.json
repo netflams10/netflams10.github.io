@@ -48,7 +48,7 @@
     ],
     "projects": [
         {"id": 7, "name": "25th & Staffing", "url": "https://www.25thandstaffing.com/", "image": "/assets/images/projects/25th.png"},
-        {"id": 6, "name": "Corporate Setup", "url": "https://corporate-setup.app/", "image": "/assets/images/projects/25th.png"},
+        {"id": 6, "name": "Corporate Setup", "url": "https://corporate-setup.app/", "image": "/assets/images/projects/corporate-setup.png"},
         {"id": 1, "name": "Jamborow", "url": "https://jamborow.co.uk/", "image": "/assets/images/projects/jamborow.png"},
         {"id": 2, "name": "Cubevest", "url": "https://cubevest.com", "image": "/assets/images/projects/cube-vest.png"},
         {"id": 3, "name": "I Data", "url": "https://idata.softinventsolutions.com/", "image": "/assets/images/projects/idata.png"},

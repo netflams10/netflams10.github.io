@@ -32,18 +32,9 @@ export default {
         this.type_status = false;
       }
     },
-    // flip_box() {
-    //   const titles = gsap.utils.toArray("p");
-    //   const tl = gsap.timeline();
-
-    //   titles.forEach((title) => {
-    //     const splitTitle = new SplitTextJS(title);
-    //   });
-    // },
   },
   created() {
     setTimeout(this.type_text, 200);
-    // setTimeout(this.flip_box, 2000);
   },
 };
 </script>
