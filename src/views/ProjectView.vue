@@ -10,7 +10,12 @@
         :key="project.id"
         class="projext--container-list-item"
       >
-        <img :src="project.image" :alt="project.name" />
+        <Project
+          :image="project.image"
+          :project_name="project.name"
+          :project_url="project.url"
+        />
+        <!-- <img :src="project.image" :alt="project.name" /> -->
         <!-- <div>
           <h3>{{ project.name }}</h3>
           <div>{{ project.url }}</div>
@@ -22,8 +27,10 @@
 
 <script>
 import { mapState } from "vuex";
+import Project from "@/components/uis/Project.vue";
 
 export default {
+  components: { Project },
   mounted() {
     this.$store.dispatch("get_projects");
   },

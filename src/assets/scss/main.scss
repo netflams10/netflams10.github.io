@@ -8,6 +8,7 @@ $base-text-color: #d3d3d3;
 $base-text-light: #ffffff;
 $base-text-special-span: #964b00;
 $base-text-normal-span: #c99a6b;
+$base-background-shadow: #22222290;
 
 * {
   margin: 0;
@@ -43,6 +44,22 @@ img {
   height: auto;
   vertical-align: middle;
   display: inline-block;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: 'Bellota';
+  font-weight: bold;
+  border-radius: .2em;
+}
+
+.button-small {
+  padding: .2em .4em;
+}
+
+.button-large {
+  padding: .2em .3em;
 }
 
 
