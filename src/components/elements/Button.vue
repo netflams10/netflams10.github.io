@@ -3,8 +3,8 @@ export default {
   props: {
     title: { type: String, required: true },
     size: { type: String, required: false },
-    on_click: { type: Function, required: true },
   },
+  methods: {},
 };
 </script>
 
@@ -12,7 +12,7 @@ export default {
   <button
     type="button"
     :class="size === 'small' ? 'button-small' : 'button-large'"
-    @onclick="on_click"
+    @click="$emit('on_click')"
   >
     {{ title }}
   </button>

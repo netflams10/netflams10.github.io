@@ -17,6 +17,7 @@ $height: calc(1080/6);
         grid-auto-rows: $height;
         grid-auto-flow: dense;
         
+        // "projext--container-list-item
         .projext--container-list-item {
             display: flex;
             justify-content: center;
@@ -33,13 +34,32 @@ $height: calc(1080/6);
                 display: block;
             }
 
+
+
             .description {
+                display: none;
+                transform: translateY(0);
+                // opacity: 0;
+            }
+
+            &:hover .description {
                 position: absolute;
                 background: $base-background-shadow;
                 z-index: 2;
                 bottom: 0;
                 width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: .2em .4em;
+
+                transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                // transform: translateY(100%);
+                // opacity: 0;
             }
+
+            // .description:hover {
+                
+            // }
         }
 
         .wide {
