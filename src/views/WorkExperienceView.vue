@@ -2,16 +2,25 @@
   <main class="experience">
     <h1 class="stack-container--header">Work Experience</h1>
 
-    <div class="">
+    <div class="experience-container">
       <div
-        v-for="work_experience in work_experiences"
+        v-for="(work_experience, index) in work_experiences"
         :key="work_experience.id"
+        class="experience-container-item"
+        :class="{ 'slide-right': (index + 1) % 2 === 0 }"
       >
-        {{ work_experience.name }} {{ work_experience.date }}
-        {{ work_experience.position }}
-        <ul>
-          <li v-for="jd in work_experience.jd" :key="jd.id">{{ jd.name }}</li>
-        </ul>
+        <div class="experience-container-item-container">
+          <div class="experience-container-item-container-header">
+            <h4>{{ work_experience.name }}</h4>
+            <h4>{{ work_experience.date }}</h4>
+          </div>
+
+          <p>{{ work_experience.position }}</p>
+
+          <ul>
+            <li v-for="jd in work_experience.jd" :key="jd.id">{{ jd.name }}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>

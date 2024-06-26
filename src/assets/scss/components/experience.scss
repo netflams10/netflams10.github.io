@@ -13,6 +13,50 @@ $height: calc(1080/6);
     margin: .5em 0;
     font-weight: 700;
   }
+
+  .experience-container {
+    width: 100%;
+
+    .experience-container-item {
+      width: 100%;
+      margin: .5em 0;
+      padding: .5em .2em;
+      display: flex;
+
+      .experience-container-item-container {
+        width: 80%;
+        border-radius: .3em;
+        padding: .9em .4em;
+        background: $base-background-hover;
+        border: .1em solid $base-text-light;
+
+        .experience-container-item-container-header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: .4em;
+
+          h4 {
+            font-family: "Bellota", 'san-serif';
+            font-weight: 700;
+            font-size: 1.3em;
+          }
+        }
+
+        p {
+          text-decoration: underline;
+          font-family: 'Bellota', 'san-serif';
+          font-weight: 700;
+          margin-bottom: .4em;
+          font-size: 1.1em;
+        }
+      }
+    }
+
+    .slide-right {
+      justify-content: flex-end;
+    }
+  }
 }
 
 .stack-container {

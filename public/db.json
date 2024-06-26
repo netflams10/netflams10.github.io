@@ -164,7 +164,7 @@
                 {"id": 3, "name": "Developing and Updating Web Applications."}
             ]
         },
-        {"id": 6, "name": "TechEnd", "date": "2022 – PRESENT", "position": "BACKEND DEVELOPER", 
+        {"id": 6, "name": "25th & STaffing", "date": "2022 – PRESENT", "position": "BACKEND DEVELOPER", 
             "jd": [
                 {"id": 1,"name": "Write Api with Laravel, Integrate and restructure code."}, 
                 {"id": 2, "name": "Consume Api with some frontend technologies (React)."},
