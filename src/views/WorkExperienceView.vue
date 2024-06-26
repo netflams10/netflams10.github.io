@@ -1,7 +1,8 @@
 <template>
-  <main>
+  <main class="experience">
+    <h1 class="stack-container--header">Work Experience</h1>
+
     <div class="">
-      <h1>Work Experience</h1>
       <div
         v-for="work_experience in work_experiences"
         :key="work_experience.id"

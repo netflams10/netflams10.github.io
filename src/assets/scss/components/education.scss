@@ -1,0 +1,81 @@
+.education {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 1.5em;
+
+  .stack-container--header {
+    font-family: 'Bellota', "Sans-serif";
+    margin: .5em 0;
+    font-weight: 700;
+  }
+
+  .education-container {
+    display: flex;
+    width: 100%;
+
+    .education-container--skill {
+      width: 30%;
+      height: 70vh;
+      padding: .3em .3em;
+      border: 1px solid $base-background-hover;
+      border-radius: .2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // align-items: center;
+
+      .education-container--skill-badges {
+        .badge-img {
+          width: 5em;
+          height: 5em;;
+        }
+      }
+
+      .education-container--skill-badges-testimonial {
+        h1 {
+          font-family: "Bellota";
+          margin-bottom: .2em;
+          text-align: center;
+        }
+
+        .education-container--skill-badges-testimonial-item {
+          background: $base-background-hover;
+          padding: .5em .4em;
+          margin: .2em 0;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .education-container--certicate {
+      width: 70%;
+      
+      .education-container--certicate-item {
+        background-color: $base-background-hover;
+        margin: .8em .3em;
+        padding: 2em 1em;
+        border-radius: .2em;
+        width: 70%;
+
+        h4 {
+          font-family: 'Bellota', 'san-serif';
+          font-weight: 700;
+          font-size: 1.2em;
+          margin-bottom: 0;
+        }
+
+        p {
+          text-align: right;
+          font-family: 'Bellota', 'san-serif';
+          font-weight: 700;
+          font-size: 1em;
+          text-decoration: underline;
+          margin-bottom: .4em;
+        }
+      }
+    }
+  }
+}
