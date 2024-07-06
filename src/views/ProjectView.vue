@@ -11,33 +11,51 @@
         class="projext--container-list-item"
       >
         <Project
+          :id="project.id"
           :image="project.image"
           :project_name="project.name"
-          :project_url="project.url"
+          @view_modal="view_modal"
         />
-        <!-- <img :src="project.image" :alt="project.name" /> -->
-        <!-- <div>
-          <h3>{{ project.name }}</h3>
-          <div>{{ project.url }}</div>
-        </div> -->
       </div>
     </div>
   </main>
+  <ProjectDetail
+    v-if="this.data && this.show"
+    :show="show"
+    :data="data"
+    @close_modal="close_modal"
+  />
 </template>
 
 <script>
 import { mapState } from "vuex";
+import ProjectDetail from "@/components/uis/ProjectDetails.vue";
 import Project from "@/components/uis/Project.vue";
 
 export default {
-  components: { Project },
+  components: { Project, ProjectDetail },
+  data() {
+    return {
+      show: false,
+      data: null,
+    };
+  },
   mounted() {
     this.$store.dispatch("get_projects");
   },
   computed: mapState({
     projects: ({ project }) => project.projects,
   }),
-  watch() {},
+  methods: {
+    view_modal(id) {
+      this.data = this.projects.find((item) => item.id === id);
+      this.show = true;
+    },
+    close_modal() {
+      this.data = null;
+      this.show = false;
+    },
+  },
 };
 </script>
 

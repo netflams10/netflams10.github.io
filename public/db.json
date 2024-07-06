@@ -47,16 +47,16 @@
         }
     ],
     "projects": [
-        {"id": 7, "name": "25th & Staffing", "url": "https://www.25thandstaffing.com/", "image": "/assets/images/projects/25th.png"},
-        {"id": 6, "name": "Corporate Setup", "url": "https://corporate-setup.app/", "image": "/assets/images/projects/corporate-setup.png"},
-        {"id": 1, "name": "Jamborow", "url": "https://jamborow.co.uk/", "image": "/assets/images/projects/jamborow.png"},
-        {"id": 2, "name": "Cubevest", "url": "https://cubevest.com", "image": "/assets/images/projects/cube-vest.png"},
-        {"id": 3, "name": "I Data", "url": "https://idata.softinventsolutions.com/", "image": "/assets/images/projects/idata.png"},
-        {"id": 4, "name": "Zero", "url": "https://zimcserver.com", "image": "/assets/images/projects/zero.png"},
-        {"id": 5, "name": "Cast", "url": "https://cast.i.ng", "image": "/assets/images/projects/cast.png"},
-        {"id": 8, "name": "Zygomed", "url": "https://zygomedltd.com/", "image": "/assets/images/projects/zygomed.png"},
-        {"id": 9, "name": "Teeka4", "url": "https://teeka4.com/", "image": "/assets/images/projects/teeka.png"},
-        {"id": 11, "name": "Era X", "url": "https://play.google.com/store/apps/details?id=com.EraX.corporateSetup&hl=en&gl=US", "image": "/assets/images/projects/erax.png"}
+        {"id": 7, "name": "25th & Staffing", "url": "https://www.25thandstaffing.com/", "image": "/assets/images/projects/25th.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 6, "name": "Corporate Setup", "url": "https://corporate-setup.app/", "image": "/assets/images/projects/corporate-setup.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 1, "name": "Jamborow", "url": "https://jamborow.co.uk/", "image": "/assets/images/projects/jamborow.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 2, "name": "Cubevest", "url": "https://cubevest.com", "image": "/assets/images/projects/cube-vest.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 3, "name": "I Data", "url": "https://idata.softinventsolutions.com/", "image": "/assets/images/projects/idata.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 4, "name": "Zero", "url": "https://zimcserver.com", "image": "/assets/images/projects/zero.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 5, "name": "Cast", "url": "https://cast.i.ng", "image": "/assets/images/projects/cast.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 8, "name": "Zygomed", "url": "https://zygomedltd.com/", "image": "/assets/images/projects/zygomed.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 9, "name": "Teeka4", "url": "https://teeka4.com/", "image": "/assets/images/projects/teeka.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 11, "name": "Era X", "url": "https://play.google.com/store/apps/details?id=com.EraX.corporateSetup&hl=en&gl=US", "image": "/assets/images/projects/erax.png", "description": "Still in development, You will get simple writups soon."}
     ],
     "articles":[
 
@@ -65,20 +65,20 @@
 
     ],
     "stacks": [
-        {"id": 1, "name": "CSS", "image": "/assets/images/languages/css3.png", 
-            "children": [
-                {"name": "css", "percent": 60, "id": 1},
-                {"name": "css3", "percent": 50, "id": 2},
-                {"name": "scss", "percent": 50, "id": 3}
+        {"id": 11, "name": "Java", "image": "/assets/images/languages/java.png", "children": [
+            {"name": "Spring", "percent": 10, "id": 1}
+        ]},
+        {"id": 9, "name": "c", "image": "/assets/images/languages/c.png", "children": [
+            {"name": "c", "percent": 30, "id": 1}
+        ]}, 
+        {"id": 10, "name": "c++", "image": "/assets/images/languages/cpp.png", "children": [
+            {"name": "c++", "percent": 10, "id": 1}
         ]},
         {"id": 2, "name": "Docker", "image": "/assets/images/languages/docker.png", "children": [
             {"name": "docker", "percent": 60, "id": 1},
             {"name": "dockerhub", "percent": 50, "id": 2},
-            {"name": "Azure Container Registry", "percent": 30, "id": 3}
-        ]},
-        {"id": 3, "name": "HTML", "image": "/assets/images/languages/html.png", "children": [
-            {"name": "html", "percent": 80, "id": 1},
-            {"name":"html5", "percent": 70, "id": 2}
+            {"name": "Azure Container Registry", "percent": 30, "id": 3},
+            {"name": "Kubernetes", "percent": 40, "id": 4}
         ]},
         {"id": 4, "name": "JavaScript [Nodejs]", "image": "/assets/images/languages/js.png", "children": [
             {"name": "nodejs", "percent": 75, "id": 1},
@@ -88,24 +88,28 @@
             {"name": "vuejs", "percent": 50, "id": 5},
             {"name": "typescript", "percent": 50, "id": 6}
         ]},
-        {"id": 5, "name": "MYSQL", "image": "/assets/images/languages/mysql.png","children": [
-            {"name": "sql", "percent": 70, "id": 1}
-        ]},
         {"id": 6, "name": "POSTGRES", "image": "/assets/images/languages/postgres.png", "children": [
             {"name": "sql", "percent": 75, "id": 1}
+        ]},
+        {"id": 5, "name": "MYSQL", "image": "/assets/images/languages/mysql.png","children": [
+            {"name": "sql", "percent": 70, "id": 1}
         ]},
         {"id": 7, "name": "PHP", "image": "/assets/images/languages/php.png", "children": [
             {"name": "php", "percent": 75, "id": 1},
             {"name": "laravel", "percent": 80, "id": 2}
         ]},
+        {"id": 1, "name": "CSS", "image": "/assets/images/languages/css3.png", 
+            "children": [
+                {"name": "css", "percent": 60, "id": 1},
+                {"name": "css3", "percent": 50, "id": 2},
+                {"name": "scss", "percent": 50, "id": 3}
+        ]},
+        {"id": 3, "name": "HTML", "image": "/assets/images/languages/html.png", "children": [
+            {"name": "html", "percent": 80, "id": 1},
+            {"name":"html5", "percent": 70, "id": 2}
+        ]},
         {"id": 8, "name": "python", "image": "/assets/images/languages/python.png", "children": [
             {"name": "python", "percent": 75, "id": 1}
-        ]},
-        {"id": 9, "name": "c", "image": "/assets/images/languages/c.png", "children": [
-            {"name": "c", "percent": 30, "id": 1}
-        ]}, 
-        {"id": 10, "name": "c++", "image": "/assets/images/languages/cpp.png", "children": [
-            {"name": "c++", "percent": 10, "id": 1}
         ]}
     ],
     "testimonials": [

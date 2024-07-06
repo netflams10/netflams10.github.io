@@ -1,0 +1,48 @@
+.project-detail--container {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .project-detail--container-container {
+        width: 100%;
+        margin: .5em 0;
+
+        h3 {
+            color: $base-text-color;
+            text-align: center;
+            font-family: 'Bellota';
+            font-weight: 700;
+            font-size: 1.5em;
+            margin: .2em 0;
+        }
+
+        div {
+            color: $base-text-color;
+            font-family: 'Bellota';
+            font-weight: 700;
+            font-size: 1em;
+        }
+    }
+
+    .project-detail--container-container-footer {
+        width: 100%;
+        text-align: right;
+
+        a {
+            padding: .6em .9em;
+            background: $base-text-special-span;
+            text-decoration: none;
+            color: $base-text-color;
+            font-family: 'Bellota';
+            font-size: 1.2em;
+            font-size: 1em;
+        }
+    }
+
+    img {
+        width: 25em;
+        border: solid .05em $base-background-color;
+    }
+}

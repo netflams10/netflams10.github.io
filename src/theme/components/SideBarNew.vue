@@ -94,7 +94,7 @@ export default {
 
   float: left;
   position: fixed;
-  z-index: 100000;
+  z-index: 99;
   top: 0;
   left: 0;
   bottom: 0;

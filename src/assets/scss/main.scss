@@ -24,6 +24,27 @@ body {
   color: $base-text-light;
   position: relative;
   overflow: hidden;
+  position: relative;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: .2em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $base-text-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $base-background-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $base-background-hover;
 }
 
 a {
@@ -53,6 +74,7 @@ button {
   font-family: 'Bellota';
   font-weight: bold;
   border-radius: .2em;
+  cursor: pointer;
 }
 
 .button-small {
@@ -63,11 +85,11 @@ button {
   padding: .2em .3em;
 }
 
-
 @import "./components/homepage.scss";
 @import "./components/project.scss";
 @import "./components/education.scss";
 @import "./components/experience.scss";
+@import "./components/project_detail.scss";
 @import "./components/stack.scss";
 @import "./components/carousel.scss";
 @import "./components/cursor.scss";

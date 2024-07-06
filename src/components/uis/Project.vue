@@ -1,26 +1,18 @@
 <script>
 import Button from "../elements/Button.vue";
-import Modal from "./Modal.vue";
+
 export default {
   props: {
-    project_url: { type: String, required: false },
+    id: { type: Number, required: false },
     image: { type: String, required: false },
     project_name: { type: String, required: false },
   },
-  components: { Button, Modal },
-  data() {
-    return {
-      show: true,
-    };
-  },
+  components: { Button },
   methods: {
-    viewmore(url) {
-      console.log(url);
-      this.show = true;
-    },
-    click_confirm_modal() {
-      console.log(this.show);
-      this.show = false;
+    send_id(id) {
+      if (id) this.$emit("view_modal", id);
+      console.log("Love her", id);
+      // this.$emit("view_more");
     },
   },
 };
@@ -31,13 +23,6 @@ export default {
 
   <div class="description">
     <h3>{{ project_name }}</h3>
-    <Button title="View More" @on_click="viewmore(project_url)" />
-    <!-- <div>{{ project.url }}</div> -->
+    <Button title="View More" @on_click="this.$emit('view_modal', id)" />
   </div>
-
-  <Modal
-    :show="show"
-    :title="project_name"
-    @confirm_modal="() => click_confirm_modal()"
-  />
 </template>
