@@ -50,6 +50,9 @@ export default {
       <SideBarLinkVue to="/work-experience" icon="fa-solid fa-briefcase"
         >Work Experience</SideBarLinkVue
       >
+      <SideBarLinkVue to="/contact" icon="fa-solid fa-envelope"
+        >Contact</SideBarLinkVue
+      >
     </div>
 
     <!-- Social links -->

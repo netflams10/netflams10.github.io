@@ -39,6 +39,11 @@ const router = createRouter({
       name: "work-experience",
       component: () => import("../views/WorkExperienceView.vue"),
     },
+    {
+      path: "/contact",
+      name: "contact",
+      component: () => import("../views/ContactView.vue"),
+    },
   ],
 });
 

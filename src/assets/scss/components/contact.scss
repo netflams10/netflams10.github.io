@@ -1,0 +1,33 @@
+.contact-container {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1.5em;
+
+    .stack-container--header {
+        font-family: 'Bellota', "Sans-serif";
+        margin: .5em 0;
+        font-weight: 700;
+    }
+
+    .contact-content {
+        width: 100%;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+
+        .contact-form {
+            width: 50%;
+        }
+
+        .contact-container-three {
+            width: 50%;
+            padding: .5em .6em;
+            margin-left: .7em;
+            border: solid .1em $base-text-color;
+            border-radius: .4em;
+            height: 65vh;
+        }
+    }
+}
