@@ -54,22 +54,24 @@ export default {
       name: "",
       email: "",
       message: "",
+      loading: false,
     };
   },
   methods: {
     async handleSubmit(event) {
+      this.loading = true;
       event.preventDefault();
       try {
         await emailjs.send(
-          process.env.MAIL_SERVICE_ID,
-          process.env.MAIL_TEMPLATE_ID,
+          import.meta.env.VITE_MAIL_SERVICE_ID,
+          import.meta.env.VITE_MAIL_TEMPLATE_ID,
           {
             email: this.email,
             name: this.name,
             // subject: this.subject,
             text: this.message,
           },
-          process.env.MAIL_USER_ID
+          import.meta.env.VITE_MAIL_USER_ID
         );
 
         this.$swal({
@@ -89,6 +91,7 @@ export default {
       this.name = "";
       this.email = "";
       this.message = "";
+      this.loading = false;
     },
   },
 };

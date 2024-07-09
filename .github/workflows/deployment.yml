@@ -40,9 +40,9 @@ jobs:
       - name: Create .env and write into it
         run: |
           touch .env
-          echo "MAIL_SERVICE_ID=${{ secrets.MAIL_SERVICE_ID }}\
-            MAIL_TEMPLATE_ID=${{ secrets.MAIL_TEMPLATE_ID }}\
-            MAIL_USER_ID=${{ secrets.MAIL_USER_ID }}" > .env
+          echo "VITE_MAIL_SERVICE_ID=${{ secrets.MAIL_SERVICE_ID }}\
+            VITE_MAIL_TEMPLATE_ID=${{ secrets.MAIL_TEMPLATE_ID }}\
+            VITE_MAIL_USER_ID=${{ secrets.MAIL_USER_ID }}" > .env
       - name: Build
         run: npm run build
       - name: Setup Pages
