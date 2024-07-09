@@ -60,12 +60,17 @@ export default {
     async handleSubmit(event) {
       event.preventDefault();
       try {
-        await emailjs.send("service_id", "template_id", {
-          email: this.email,
-          name: this.name,
-          // subject: this.subject,
-          text: this.text,
-        });
+        await emailjs.send(
+          process.env.MAIL_SERVICE_ID,
+          process.env.MAIL_TEMPLATE_ID,
+          {
+            email: this.email,
+            name: this.name,
+            // subject: this.subject,
+            text: this.message,
+          },
+          process.env.MAIL_USER_ID
+        );
 
         this.$swal({
           title: "Success",
