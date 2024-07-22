@@ -52,7 +52,7 @@
         {"id": 1, "name": "Jamborow", "url": "https://jamborow.co.uk/", "image": "/assets/images/projects/jamborow.png", "description": "Still in development, You will get simple writups soon."},
         {"id": 2, "name": "Cubevest", "url": "https://cubevest.com", "image": "/assets/images/projects/cube-vest.png", "description": "Still in development, You will get simple writups soon."},
         {"id": 3, "name": "I Data", "url": "https://idata.softinventsolutions.com/", "image": "/assets/images/projects/idata.png", "description": "Still in development, You will get simple writups soon."},
-        {"id": 4, "name": "Zero", "url": "https://zimcserver.com", "image": "/assets/images/projects/zero.png", "description": "Still in development, You will get simple writups soon."},
+        {"id": 4, "name": "Zero", "url": "https://zimcserver.com", "image": "/assets/images/projects/zimcserver.png", "description": "Still in development, You will get simple writups soon."},
         {"id": 5, "name": "Cast", "url": "https://cast.i.ng", "image": "/assets/images/projects/cast.png", "description": "Still in development, You will get simple writups soon."},
         {"id": 8, "name": "Zygomed", "url": "https://zygomedltd.com/", "image": "/assets/images/projects/zygomed.png", "description": "Still in development, You will get simple writups soon."},
         {"id": 9, "name": "Teeka4", "url": "https://teeka4.com/", "image": "/assets/images/projects/teeka.png", "description": "Still in development, You will get simple writups soon."},
