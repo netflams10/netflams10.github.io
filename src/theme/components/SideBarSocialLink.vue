@@ -17,11 +17,11 @@ export default {
 </script>
 
 <template>
-  <div class="link">
-    <a :href="to" target="__blanc">
+  <div class="hover:bg-[#37474f] flex items-center cursor-pointer p-[.5em] rounded-[.25em] h-[1.5em] my-[.5em]" :class="{'bg-[263238]' : is_active}">
+    <a :href="to" target="__blanc" class="">
       <i class="icon" :class="icon" />
       <transition name="fade">
-        <span v-if="!collapsed" class="icon-text"><slot /></span>
+        <span v-if="!collapsed" class="text-[1em]"><slot /></span>
       </transition>
     </a>
   </div>
@@ -37,43 +37,10 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-
-.link {
-  display: flex;
-  align-items: center;
-
-  cursor: pointer;
-  padding: 0.4em;
-  /* padding-top: 0.5em;
-  padding-bottom: 0.5em; */
-  border-radius: 0.25em;
-  height: 1.5em;
-
-  color: white;
-  text-decoration: none;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.link:hover {
-  background-color: var(--sidebar-item-hover-href);
-}
-
-.link.active {
-  background-color: var(--sidebar-item-active);
-}
-
-a {
-  text-decoration: none;
-  color: var(--sidebar-item-text);
-}
 .link a .icon {
   flex-shrink: 0;
   width: 35px;
   margin-right: 10px;
 }
 
-.icon-text {
-  font-size: 1em;
-}
 </style>

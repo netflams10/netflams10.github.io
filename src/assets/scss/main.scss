@@ -27,26 +27,6 @@ body {
   position: relative;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: .2em;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: $base-text-color;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $base-background-color;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $base-background-hover;
-}
-
 a {
   text-decoration: none;
 }

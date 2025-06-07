@@ -1,6 +1,7 @@
 // import dotenv from "dotenv";
 // dotenv.config();
 import "./assets/scss/main.scss";
+import "./style.css";
 import "vue-final-modal/style.css";
 import "sweetalert2/dist/sweetalert2.min.css";
 

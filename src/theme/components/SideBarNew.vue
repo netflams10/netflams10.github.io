@@ -14,23 +14,16 @@ export default {
 </script>
 
 <template>
-  <div class="sidebar" :style="{ width: sidebar_width }">
-    <div class="sidebar-header">
-      <span v-if="collapsed">
-        <h1>O</h1>
-      </span>
-      <span v-else>
-        <div>
-          <img
-            src="/assets/images/my_image/ope.jpeg"
-            alt="My Very own face"
-            class=""
-          />
-        </div>
-      </span>
+  <div class="md:w-full border md:border-none bg-[#d3d3d3] md:bg-[#222222] z-50 md:z-0 absolute md:relative h-[7vh] md:h-full overflow-hidden flex md:block px-4 md:px-0 items-center rounded-md md:rounded-none top-3 md:top-0 shadow-lg md:shadow-none ">
+    <div class="md:my-5 md:grid md:justify-items-center rounded-full md:rounded-none overflow-hidden mr-5 md:mr-0 shadow-md md:shadow-none">
+      <img
+        src="/assets/images/my_image/ope.jpeg"
+        alt="My Very own face"
+        class="h-[5vh] w-[5vh] md:h-[8em] md:w-[8em] md:shadow-lg"
+      />
     </div>
 
-    <div class="sidebar--nav-list">
+    <div class="m-[1em] flex md:block">
       <SideBarLinkVue to="/" icon="fas fa-home">Home</SideBarLinkVue>
       <SideBarLinkVue to="/projects" icon="fa-solid fa-diagram-project"
         >Project</SideBarLinkVue
@@ -48,7 +41,7 @@ export default {
         >Education</SideBarLinkVue
       >
       <SideBarLinkVue to="/work-experience" icon="fa-solid fa-briefcase"
-        >Work Experience</SideBarLinkVue
+        >Experience</SideBarLinkVue
       >
       <SideBarLinkVue to="/contact" icon="fa-solid fa-envelope"
         >Contact</SideBarLinkVue
@@ -56,7 +49,7 @@ export default {
     </div>
 
     <!-- Social links -->
-    <div class="sidebar--nav-list">
+    <div class="hidden md:m-[1em] md:block">
       <SideBarSocialLink
         to="https://github.com/netflams10"
         icon="fa-brands fa-github"
@@ -80,10 +73,13 @@ export default {
     </div>
     <!-- End Social links -->
 
-    <span
-      class="collapse-icon"
+    <!-- <span
+      class="collapse-icon hidden md:block"
       @click="toggle_sidebar"
       :class="{ 'rotate-180': collapsed }"
+    > -->
+    <span
+      class="collapse-icon hidden md:flex md:absolute bottom-0 p-[.75em] right-0"
     >
       <i class="fas fa-angle-double-left" />
     </span>
@@ -91,7 +87,7 @@ export default {
 </template>
 
 <style scoped>
-.sidebar {
+/* .sidebar {
   color: white;
   background-color: var(--sidebar-bg-color);
 
@@ -141,9 +137,5 @@ img {
 
   margin-top: 0.8em;
   margin-bottom: 0.8em;
-}
-
-.sidebar--nav-list {
-  margin: 1em 0;
-}
+}*/
 </style>

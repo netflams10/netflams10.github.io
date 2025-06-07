@@ -1,7 +1,9 @@
 <template>
-  <SideBarNew />
-  <div :style="{ 'margin-left': sidebar_width }" class="container">
-    <RouterView />
+  <div class="w-[100vw] h-[100vh] overflow-hidden grid grid-cols-1 md:grid-cols-[15rem,1fr] justify-items-center relative">
+    <SideBarNew />
+    <div class="w-full overflow-y-auto overflow-x-hidden bg-[#222222] md:border-l">
+      <RouterView />
+    </div>
   </div>
 </template>
 
@@ -25,17 +27,5 @@ export default {
   --sidebar-item-hover-href: #37474f;
 
   --sidebar-item-text: #ffffff;
-}
-
-.container {
-  border: 0.5px solid var(--sidebar-item-hover);
-
-  transition: 0.3s ease;
-
-  height: 100vh;
-  overflow: hidden;
-  width: "100%";
-
-  background-color: var(--sidebar-bg-color);
 }
 </style>

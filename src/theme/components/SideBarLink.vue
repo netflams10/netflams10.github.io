@@ -17,9 +17,9 @@ export default {
 </script>
 
 <template>
-  <router-link :to="to" class="link" :class="{ active: is_active }">
+  <router-link :to="to" class="flex py-[.9em] items-center cursor-pointer p-[.5em] h-[.5em] rounded-[.25em] hover:bg-[#455a64]" :class="{ active: is_active }">
     <i class="icon" :class="icon" />
-    <transition name="fade">
+    <transition name="fade" class="hidden md:block md:ml-2">
       <span v-if="!collapsed"><slot /></span>
     </transition>
   </router-link>
@@ -37,11 +37,8 @@ export default {
 }
 
 .link {
-  display: flex;
-  align-items: center;
 
-  cursor: pointer;
-  padding: 0.5em;
+  /* padding: 0.5em;
   border-radius: 0.25em;
   height: 1.5em;
 
@@ -49,7 +46,7 @@ export default {
   text-decoration: none;
 
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 5px; */
 }
 
 .link:hover {

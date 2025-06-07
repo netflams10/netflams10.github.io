@@ -42,7 +42,7 @@ export default {
 <template>
   <main class="main-container">
     <section class="header-section">
-      <h2 class="header-section--title">
+      <h2 class="header-section--title text-[blue]">
         <span><i class="fa-solid fa-arrow-right-long" /></span>
         Hi, my name is
         <span class="header-section--typed-text">{{ type_value }}</span>
