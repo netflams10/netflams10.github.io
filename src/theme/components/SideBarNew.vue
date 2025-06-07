@@ -14,13 +14,19 @@ export default {
 </script>
 
 <template>
-  <div class="md:w-full border md:border-none bg-[#d3d3d3] md:bg-[#222222] z-50 md:z-0 absolute md:relative h-[7vh] md:h-full overflow-hidden flex md:block px-4 md:px-0 items-center rounded-md md:rounded-none top-3 md:top-0 shadow-lg md:shadow-none ">
-    <div class="md:my-5 md:grid md:justify-items-center rounded-full md:rounded-none overflow-hidden mr-5 md:mr-0 shadow-md md:shadow-none">
-      <img
-        src="/assets/images/my_image/ope.jpeg"
-        alt="My Very own face"
-        class="h-[5vh] w-[5vh] md:h-[8em] md:w-[8em] md:shadow-lg"
-      />
+  <div
+    class="md:w-full border md:border-none bg-[#d3d3d3] md:bg-[#222222] z-50 md:z-0 absolute md:relative h-[7vh] md:h-full overflow-hidden flex md:block px-4 md:px-0 items-center rounded-md md:rounded-none top-3 md:top-0 shadow-lg md:shadow-none"
+  >
+    <div
+      class="md:my-5 md:grid md:justify-items-center rounded-full md:rounded-none overflow-hidden mr-5 md:mr-0 shadow-md md:shadow-none"
+    >
+      <div class="border-2 border-white rounded-full p-1">
+        <img
+          src="/assets/images/my_image/ope.jpeg"
+          alt="My Very own face"
+          class="h-[4vh] w-[4vh] md:h-[8em] md:w-[8em] md:shadow-lg rounded-full"
+        />
+      </div>
     </div>
 
     <div class="m-[1em] flex md:block">
