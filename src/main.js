@@ -1,5 +1,3 @@
-// import dotenv from "dotenv";
-// dotenv.config();
 import "./assets/scss/main.scss";
 import "./style.css";
 import "vue-final-modal/style.css";

@@ -1,65 +1,44 @@
 <script>
 import { computed } from "vue";
-import { collapsed } from "./state";
 import { useRoute } from "vue-router";
 
 export default {
   props: {
     to: { type: String, required: true },
     icon: { type: String, required: true },
+    open: { type: Boolean, required: true },
   },
   setup(props) {
     const route = useRoute();
     const is_active = computed(() => route.path === props.to);
-    return { is_active, collapsed };
+    return { is_active };
   },
 };
 </script>
 
 <template>
-  <router-link :to="to" class="flex py-[.9em] items-center cursor-pointer p-[.5em] h-[.5em] rounded-[.25em] hover:bg-[#455a64]" :class="{ active: is_active }">
-    <i class="icon" :class="icon" />
-    <transition name="fade" class="hidden md:block md:ml-2">
-      <span v-if="!collapsed"><slot /></span>
-    </transition>
+  <router-link
+    :to="to"
+    class="mx-2 md:flex md:items-center md:py-2.5 cursor-pointer md:rounded-md md:h-8"
+    :class="{
+      'bg-[#263238]': is_active,
+      'hover:bg-[#37474f] px-3': open,
+      'md:justify-center': !open,
+    }"
+  >
+    <i
+      class="md:text-2xl"
+      :class="[
+        icon,
+        !open ? 'hover:text-[#37474f]' : '',
+        'transition-all duration-200',
+      ]"
+    />
+    <span
+      v-if="open"
+      class="hidden md:block md:text-sm md:transition-opacity md:duration-200 md:ease-in-out md:opacity-100"
+      :class="{ 'md:opacity-0': !open, 'md:opacity-100 md:ml-4': open }"
+      ><slot
+    /></span>
   </router-link>
 </template>
-
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.1s;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.link {
-
-  /* padding: 0.5em;
-  border-radius: 0.25em;
-  height: 1.5em;
-
-  color: white;
-  text-decoration: none;
-
-  margin-bottom: 5px;
-  margin-top: 5px; */
-}
-
-.link:hover {
-  background-color: var(--sidebar-item-hover);
-}
-
-.link.active {
-  background-color: var(--sidebar-item-active);
-}
-
-.link .icon {
-  flex-shrink: 0;
-  width: 25px;
-  margin-right: 10px;
-}
-</style>

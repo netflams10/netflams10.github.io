@@ -4,6 +4,10 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      transitionProperty: {
+        width: "width",
+        spacing: "margin, padding",
+      },
       colors: {
         base: {
           dark_bg: "#222222",
